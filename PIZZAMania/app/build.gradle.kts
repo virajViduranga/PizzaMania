@@ -39,10 +39,13 @@ dependencies {
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.activity:activity-ktx:1.8.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("com.google.android.gms:play-services-maps:18.1.0")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
 
     // ✅ Firebase
     implementation("com.google.firebase:firebase-database:20.3.0")
     implementation("com.google.firebase:firebase-auth:22.3.1")
+    implementation(libs.firebase.database)
 
     // ✅ Testing
     testImplementation("junit:junit:4.13.2")
