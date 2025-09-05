@@ -1,56 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="20dp"
-    android:background="#FFF8E1"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- App Title -->
-    <TextView
-        android:id="@+id/appTitle"
-        android:text="🍕 Pizza Mania 🍕"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:textColor="#D84315"
-        android:layout_marginBottom="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
-    <!-- Buttons -->
-    <Button
-        android:id="@+id/btnMenu"
-        android:text="View Menu"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"/>
+        app:menu="@menu/bottom_nav_menu" />
 
-    <Button
-        android:id="@+id/btnCart"
-        android:text="My Cart"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"/>
-
-    <Button
-        android:id="@+id/btnBranches"
-        android:text="Our Branches"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"/>
-
-    <Button
-        android:id="@+id/btnOrders"
-        android:text="My Orders"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"/>
-
-    <Button
-        android:id="@+id/btnProfile"
-        android:text="My Profile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
 
 </LinearLayout>

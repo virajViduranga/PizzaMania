@@ -24,7 +24,6 @@
 
         <!-- Activities -->
         <activity android:name=".MapsActivity" android:exported="true" />
-        <activity android:name=".MenuActivity" android:exported="true" />
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

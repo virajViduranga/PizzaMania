@@ -3075,6 +3075,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_account
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3084,6 +3085,7 @@ drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_home
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -3095,6 +3097,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+drawable ic_settings
 drawable indeterminate_static
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3254,7 +3257,6 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
-id appTitle
 id arc
 id asConfigured
 id async
@@ -3271,19 +3273,18 @@ id below
 id bestChoice
 id blocking
 id bottom
+id bottom_navigation
 id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id btnBranches
-id btnCart
+id btnChangePassword
 id btnDirections
-id btnMenu
+id btnLogout
 id btnMyLocation
 id btnNearest
-id btnOpenMap
-id btnOrders
-id btnProfile
+id btnNotifications
+id btnOpenMenu
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3384,6 +3385,7 @@ id fixed
 id flip
 id floating
 id forever
+id fragment_container
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3493,6 +3495,9 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id nav_account
+id nav_home
+id nav_settings
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3559,6 +3564,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rvRecommended
 id satellite
 id save_non_transition_alpha
 id save_overlay_view
@@ -3671,6 +3677,11 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvAccountInfo
+id tvAccountTitle
+id tvHomeTitle
+id tvNearest
+id tvSettingsTitle
 id unchecked
 id uniform
 id unlabeled
@@ -3814,7 +3825,6 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout activity_maps
-layout activity_menu
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3831,6 +3841,9 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_account
+layout fragment_home
+layout fragment_settings
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout m3_alert_dialog
@@ -3894,6 +3907,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round

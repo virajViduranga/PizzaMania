@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-37:12
+ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-36:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\c4e70e887f52082eb2120633c7e9c4f9\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\ASUS4\.gradle\caches\8.13\transforms\b863723dae7a1d497946698320f89336\transformed\constraintlayout-2.2.1\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.1] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2a41819dbb4c0977fcbf8178eab7ee88\transformed\appcompat-resources-1.7.1\AndroidManifest.xml:2:1-7:12
@@ -76,8 +76,8 @@ ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:8:5-81
 	android:name
 		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:8:22-78
 application
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:10:5-35:19
-INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:10:5-35:19
+ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:10:5-34:19
+INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:10:5-34:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\c4e70e887f52082eb2120633c7e9c4f9\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\c4e70e887f52082eb2120633c7e9c4f9\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\ASUS4\.gradle\caches\8.13\transforms\b863723dae7a1d497946698320f89336\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
@@ -136,28 +136,22 @@ ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:26:9-7
 		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:26:48-71
 	android:name
 		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:26:19-47
-activity#com.kosala.pizza_mania.MenuActivity
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:27:9-74
+activity#com.kosala.pizza_mania.MainActivity
+ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:27:9-32:20
 	android:exported
 		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:27:48-71
 	android:name
 		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:27:19-47
-activity#com.kosala.pizza_mania.MainActivity
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:28:9-33:20
-	android:exported
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:28:48-71
-	android:name
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:28:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:29:13-32:29
+ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:28:13-31:29
 action#android.intent.action.MAIN
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:30:17-69
+ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:30:25-66
+		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:31:17-77
+ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:31:27-74
+		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:30:27-74
 uses-sdk
 INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml

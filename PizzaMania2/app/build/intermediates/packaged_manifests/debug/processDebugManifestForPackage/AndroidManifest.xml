@@ -56,9 +56,6 @@
             android:name="com.kosala.pizza_mania.MapsActivity"
             android:exported="true" />
         <activity
-            android:name="com.kosala.pizza_mania.MenuActivity"
-            android:exported="true" />
-        <activity
             android:name="com.kosala.pizza_mania.MainActivity"
             android:exported="true" >
             <intent-filter>

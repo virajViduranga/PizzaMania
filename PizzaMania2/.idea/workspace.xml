@@ -12,10 +12,36 @@
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
         <config>
+          <state>Portrait</state>
           <theme>@style/Theme.PizzaMania</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml">
+        <config>
+          <theme>@style/Theme.PizzaMania</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_account.xml">
+        <config>
+          <theme>@style/Theme.PizzaMania</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
+        <config>
+          <theme>@style/Theme.PizzaMania</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml">
+        <config>
+          <theme>@style/Theme.PizzaMania</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_pizza.xml">
+        <config>
+          <theme>@style/Theme.PizzaMania</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml">
         <config>
           <theme>@style/Theme.PizzaMania</theme>
         </config>
@@ -45,8 +71,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="valueResourceFile" />
-        <option value="Class" />
+        <option value="resourceFile" />
         <option value="layoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -74,6 +101,12 @@
     "settings.editor.selected.configurable": "AndroidSdkUpdater"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\res\menu" />
+      <recent name="D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\res\drawable" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="Pizza-Mania.app" />
@@ -163,12 +196,12 @@
       <map>
         <entry key="com.kosala.pizza_mania">
           <value>
-            <CheckInfo lastCheckTimestamp="1756922783639" />
+            <CheckInfo lastCheckTimestamp="1757012396070" />
           </value>
         </entry>
         <entry key="com.kosala.pizza_mania.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1756922783631" />
+            <CheckInfo lastCheckTimestamp="1757012396081" />
           </value>
         </entry>
       </map>

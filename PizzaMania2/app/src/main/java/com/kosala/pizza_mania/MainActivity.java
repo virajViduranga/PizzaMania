@@ -1,43 +1,44 @@
 package com.kosala.pizza_mania;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnMenu, btnCart, btnBranches, btnOrders, btnProfile;
+    BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Initialize buttons
-        btnMenu = findViewById(R.id.btnMenu);
-        btnCart = findViewById(R.id.btnCart);
-        btnBranches = findViewById(R.id.btnBranches);
-        btnOrders = findViewById(R.id.btnOrders);
-        btnProfile = findViewById(R.id.btnProfile);
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        // ✅ Navigate to MenuActivity
-        btnMenu.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, MenuActivity.class);
-            startActivity(intent);
+        // default fragment
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_container, new HomeFragment())
+                .commit();
+
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            Fragment selected = null;
+            int itemId = item.getItemId(); // Get the item ID once
+
+            if (itemId == R.id.nav_home) {
+                selected = new HomeFragment();
+            } else if (itemId == R.id.nav_account) {
+                selected = new AccountFragment();
+            } else if (itemId == R.id.nav_settings) {
+                selected = new SettingsFragment();
+            }
+
+            if (selected != null) {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_container, selected)
+                        .commit();
+            }
+            return true;
         });
-
-        // ✅ Navigate to MapsActivity (Branches)
-        btnBranches.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, MapsActivity.class);
-            startActivity(intent);
-        });
-
-        // 🔜 Other buttons (placeholders)
-        btnCart.setOnClickListener(v -> { /* TODO: Open CartActivity */ });
-        btnOrders.setOnClickListener(v -> { /* TODO: Open OrdersActivity */ });
-        btnProfile.setOnClickListener(v -> { /* TODO: Open ProfileActivity */ });
     }
 }
