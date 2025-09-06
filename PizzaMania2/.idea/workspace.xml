@@ -5,6 +5,31 @@
       <config />
     </shared>
     <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/gradient_background.xml">
+        <config>
+          <theme>@style/Theme.PizzaMania</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/font/poppins_regular.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
         <config>
           <theme>@style/Theme.PizzaMania</theme>
@@ -17,6 +42,16 @@
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml">
+        <config>
+          <theme>@style/Theme.PizzaMania</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_signup.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_forgot_password.xml">
         <config>
           <theme>@style/Theme.PizzaMania</theme>
         </config>
@@ -70,10 +105,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="valueResourceFile" />
-        <option value="resourceFile" />
-        <option value="layoutResourceFile" />
         <option value="Class" />
+        <option value="resourceFile" />
+        <option value="valueResourceFile" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -103,8 +138,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\res\menu" />
-      <recent name="D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\res\drawable" />
+      <recent name="D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\res\values" />
+      <recent name="D:\NIBM\HNDSE\MAD\PizzaMania2\app\build\generated\res\processDebugGoogleServices\values" />
+      <recent name="D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\res" />
+      <recent name="D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\res\font" />
+      <recent name="D:\NIBM\HNDSE\MAD\PizzaMania2\app\build\generated\res\resValues\debug" />
     </key>
   </component>
   <component name="RunManager">
@@ -196,12 +234,12 @@
       <map>
         <entry key="com.kosala.pizza_mania">
           <value>
-            <CheckInfo lastCheckTimestamp="1757012396070" />
+            <CheckInfo lastCheckTimestamp="1757100362414" />
           </value>
         </entry>
         <entry key="com.kosala.pizza_mania.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1757012396081" />
+            <CheckInfo lastCheckTimestamp="1757100362417" />
           </value>
         </entry>
       </map>

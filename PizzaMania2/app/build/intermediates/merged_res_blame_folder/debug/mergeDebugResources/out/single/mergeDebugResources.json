@@ -1,138 +1,230 @@
 [
     {
-        "merged": "com.kosala.pizza_mania.app-debug-35:/layout_activity_main.xml.flat",
-        "source": "com.kosala.pizza_mania.app-main-37:/layout/activity_main.xml"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.kosala.pizza_mania.app-debug-35:/layout_fragment_settings.xml.flat",
-        "source": "com.kosala.pizza_mania.app-main-37:/layout/fragment_settings.xml"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\mipmap-hdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\font_poppins_regular.ttf.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\font\\poppins_regular.ttf"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\drawable_ic_account.png.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\drawable\\ic_account.png"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\layout_activity_maps.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\layout\\activity_maps.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\layout_activity_signup.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\layout\\activity_signup.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\mipmap-mdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\layout_activity_menu.xml.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\layout\\activity_menu.xml"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\layout_fragment_account.xml.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\layout\\fragment_account.xml"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\font_poppins_extralightitalic.ttf.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\font\\poppins_extralightitalic.ttf"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\xml\\backup_rules.xml"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\menu_bottom_nav_menu.xml.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\menu\\bottom_nav_menu.xml"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\layout_item_pizza.xml.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\layout\\item_pizza.xml"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\drawable_ic_email.png.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\drawable\\ic_email.png"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\font_poppins_mediumitalic.ttf.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\font\\poppins_mediumitalic.ttf"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\xml\\data_extraction_rules.xml"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\font_poppins_light.ttf.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\font\\poppins_light.ttf"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\layout_activity_maps.xml.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\layout\\activity_maps.xml"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\layout_fragment_settings.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\layout\\fragment_settings.xml"
     },
     {
-        "merged": "com.kosala.pizza_mania.app-debug-35:/menu_bottom_nav_menu.xml.flat",
-        "source": "com.kosala.pizza_mania.app-main-37:/menu/bottom_nav_menu.xml"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\font_poppins_extralight.ttf.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\font\\poppins_extralight.ttf"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\font_poppins_medium.ttf.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\font\\poppins_medium.ttf"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\layout\\fragment_home.xml"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\drawable_gradient_background.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\drawable\\gradient_background.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\font_poppins_thin.ttf.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\font\\poppins_thin.ttf"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\mipmap-mdpi\\ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\mipmap-hdpi\\ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\layout_fragment_account.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\layout\\fragment_account.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\layout\\activity_main.xml"
+        "merged": "com.kosala.pizza_mania.app-debug-41:/layout_activity_signup.xml.flat",
+        "source": "com.kosala.pizza_mania.app-main-43:/layout/activity_signup.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\font_poppins_semibolditalic.ttf.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\font\\poppins_semibolditalic.ttf"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\drawable_ic_home.png.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\drawable\\ic_home.png"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\drawable_ic_account.png.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\drawable\\ic_account.png"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\drawable_ic_settings.png.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\drawable\\ic_settings.png"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\font_poppins_semibold.ttf.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\font\\poppins_semibold.ttf"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-35:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-37:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\drawable_ic_home.png.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\drawable\\ic_home.png"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\font_poppins_bolditalic.ttf.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\font\\poppins_bolditalic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\font_poppins_thinitalic.ttf.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\font\\poppins_thinitalic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\drawable_ic_settings.png.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\drawable\\ic_settings.png"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\font_poppins_black.ttf.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\font\\poppins_black.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\font_poppins_bold.ttf.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\font\\poppins_bold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\font_poppins_extrabold.ttf.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\font\\poppins_extrabold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\font_poppins_extrabolditalic.ttf.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\font\\poppins_extrabolditalic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\drawable_pizza_logo.png.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\drawable\\pizza_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\font_poppins_italic.ttf.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\font\\poppins_italic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\drawable_ic_google.png.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\drawable\\ic_google.png"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\layout_dialog_forgot_password.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\layout\\dialog_forgot_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\font_poppins_blackitalic.ttf.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\font\\poppins_blackitalic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\font_poppins_lightitalic.ttf.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\font\\poppins_lightitalic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-41:\\drawable_ic_lock.png.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-43:\\drawable\\ic_lock.png"
     }
 ]

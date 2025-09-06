@@ -22,9 +22,22 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyC8-jtVYQXofkvg7Hhuqn9jY-BF4xT5WpY" />
 
-        <!-- Activities -->
-        <activity android:name=".MapsActivity" android:exported="true" />
-        <activity android:name=".MainActivity" android:exported="true">
+        <!-- Main -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <!-- Signup -->
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true"
+            android:theme="@style/AuthTheme" />
+
+        <!-- Login (Launcher) -->
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AuthTheme"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
