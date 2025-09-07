@@ -3,36 +3,26 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <!-- Home Title -->
-    <TextView
-        android:id="@+id/tvHomeTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Home"
-        android:textColor="#000000"
-        android:textSize="22sp"
-        android:textStyle="bold" />
-
-    <!-- Cart Button top right -->
-    <Button
-        android:id="@+id/btnGoToCart"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:background="@drawable/ic_cart"
-        android:text=""
-        android:contentDescription="Cart" />
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:title="Home"
+        android:titleTextColor="#000000"/>
 
     <!-- Nearest Branch -->
     <TextView
         android:id="@+id/tvNearest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvHomeTitle"
+        android:layout_below="@id/toolbar"
         android:layout_marginTop="12dp"
         android:text="Nearest branch will appear here"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:textSize="16sp"/>
 
     <!-- ProgressBar -->
     <ProgressBar
@@ -49,5 +39,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/tvNearest"
-        android:layout_marginTop="12dp" />
+        android:layout_marginTop="12dp"/>
 </RelativeLayout>

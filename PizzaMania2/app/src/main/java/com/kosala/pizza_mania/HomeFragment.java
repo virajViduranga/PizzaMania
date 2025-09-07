@@ -2,18 +2,23 @@ package com.kosala.pizza_mania;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -50,6 +55,14 @@ public class HomeFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
+        setHasOptionsMenu(true); // ✅ Show menu in toolbar
+
+        // ✅ Toolbar setup
+        Toolbar toolbar = view.findViewById(R.id.toolbar);
+        if (getActivity() instanceof AppCompatActivity) {
+            ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
+        }
+
         rvRecommended = view.findViewById(R.id.rvRecommended);
         progressBar = view.findViewById(R.id.progressBar);
         tvNearest = view.findViewById(R.id.tvNearest);
@@ -62,7 +75,6 @@ public class HomeFragment extends Fragment {
         adapter = new RecommendedMenuAdapter(getContext(), pizzaList);
         rvRecommended.setAdapter(adapter);
 
-        // ✅ Request permission before using location
         requestLocationPermission();
 
         return view;
@@ -96,9 +108,7 @@ public class HomeFragment extends Fragment {
     @SuppressLint("MissingPermission")
     private void detectNearestBranch() {
         if (ActivityCompat.checkSelfPermission(requireContext(), Manifest.permission.ACCESS_FINE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED) {
-            return;
-        }
+                != PackageManager.PERMISSION_GRANTED) return;
 
         fusedLocationProviderClient.getLastLocation()
                 .addOnSuccessListener(location -> {
@@ -176,5 +186,21 @@ public class HomeFragment extends Fragment {
                     progressBar.setVisibility(View.GONE);
                     Toast.makeText(getContext(), "Error: " + e.getMessage(), Toast.LENGTH_SHORT).show();
                 });
+    }
+
+    // ✅ Toolbar Menu
+    @Override
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
+        inflater.inflate(R.menu.menu_main, menu);
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.action_cart) {
+            startActivity(new Intent(getContext(), CartActivity.class));
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

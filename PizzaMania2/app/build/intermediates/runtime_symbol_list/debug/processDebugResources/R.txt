@@ -3293,6 +3293,7 @@ int id action_bar_root 0x7f090037
 int id action_bar_spinner 0x7f090038
 int id action_bar_subtitle 0x7f090039
 int id action_bar_title 0x7f09003a
+int id action_cart 0x7f090235
 int id action_container 0x7f09003b
 int id action_context_bar 0x7f09003c
 int id action_divider 0x7f09003d
@@ -3345,9 +3346,10 @@ int id browser_actions_menu_items 0x7f09006b
 int id browser_actions_menu_view 0x7f09006c
 int id btnAddToCart 0x7f090230
 int id btnChangePassword 0x7f09006d
+int id btnCheckout 0x7f09023f
 int id btnDecrease 0x7f090231
+int id btnDelete 0x7f09023b
 int id btnDirections 0x7f09006e
-int id btnGoToCart 0x7f090232
 int id btnGoToLogin 0x7f09006f
 int id btnGoToSignup 0x7f090070
 int id btnIncrease 0x7f090233
@@ -3647,6 +3649,7 @@ int id right_icon 0x7f090195
 int id right_side 0x7f090196
 int id rounded 0x7f090197
 int id row_index_key 0x7f090198
+int id rvCart 0x7f090238
 int id rvRecommended 0x7f090199
 int id satellite 0x7f09019a
 int id save_non_transition_alpha 0x7f09019b
@@ -3748,6 +3751,7 @@ int id title 0x7f0901fa
 int id titleDividerNoCustom 0x7f0901fb
 int id title_template 0x7f0901fc
 int id toggle 0x7f0901fd
+int id toolbar 0x7f090237
 int id top 0x7f0901fe
 int id topPanel 0x7f0901ff
 int id touch_outside 0x7f090200
@@ -3766,12 +3770,13 @@ int id tvAccountInfo 0x7f09020c
 int id tvAccountTitle 0x7f09020d
 int id tvAppName 0x7f09020e
 int id tvForgotPassword 0x7f09020f
-int id tvHomeTitle 0x7f090210
+int id tvItemName 0x7f09023d
 int id tvNearest 0x7f090211
 int id tvPizzaName 0x7f090212
 int id tvPizzaPrice 0x7f090213
 int id tvQuantity 0x7f090234
 int id tvSettingsTitle 0x7f090214
+int id tvTotal 0x7f09023e
 int id tvWelcome 0x7f090215
 int id unchecked 0x7f090216
 int id uniform 0x7f090217
@@ -3914,6 +3919,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0c0018
 int layout abc_search_view 0x7f0c0019
 int layout abc_select_dialog_material 0x7f0c001a
 int layout abc_tooltip 0x7f0c001b
+int layout activity_cart 0x7f0c0077
 int layout activity_login 0x7f0c001c
 int layout activity_main 0x7f0c001d
 int layout activity_maps 0x7f0c001e
@@ -3942,6 +3948,10 @@ int layout fragment_home 0x7f0c0034
 int layout fragment_settings 0x7f0c0035
 int layout ime_base_split_test_activity 0x7f0c0036
 int layout ime_secondary_split_test_activity 0x7f0c0037
+int layout item_cart 0x7f0c0078
+int layout item_cart_dynamic 0x7f0c0079
+int layout item_cart_editable 0x7f0c007a
+int layout item_cart_row 0x7f0c007b
 int layout item_pizza 0x7f0c0038
 int layout item_pizza_with_cart 0x7f0c0076
 int layout m3_alert_dialog 0x7f0c0039
@@ -4006,6 +4016,7 @@ int layout select_dialog_multichoice_material 0x7f0c0073
 int layout select_dialog_singlechoice_material 0x7f0c0074
 int layout support_simple_spinner_dropdown_item 0x7f0c0075
 int menu bottom_nav_menu 0x7f0e0000
+int menu menu_main 0x7f0e0001
 int mipmap ic_launcher 0x7f0f0000
 int mipmap ic_launcher_foreground 0x7f0f0001
 int mipmap ic_launcher_round 0x7f0f0002

@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.kosala.pizza_mania.R;
 import com.kosala.pizza_mania.models.Pizza;
+import com.kosala.pizza_mania.utils.CartDatabaseHelper;
 
 import java.util.List;
 
@@ -22,10 +23,12 @@ public class RecommendedMenuAdapter extends RecyclerView.Adapter<RecommendedMenu
 
     private final Context context;
     private final List<Pizza> pizzaList;
+    private final CartDatabaseHelper dbHelper;
 
     public RecommendedMenuAdapter(Context context, List<Pizza> pizzaList) {
         this.context = context;
         this.pizzaList = pizzaList;
+        this.dbHelper = new CartDatabaseHelper(context);
     }
 
     @NonNull
@@ -43,33 +46,30 @@ public class RecommendedMenuAdapter extends RecyclerView.Adapter<RecommendedMenu
         holder.tvPrice.setText("Rs " + pizza.getPrice());
         holder.tvQuantity.setText("1");
 
-        // Load image from URL
+        // Load image
         String url = pizza.getImageUrl();
         if (url != null && !url.isEmpty()) {
-            Glide.with(context)
-                    .load(url)
-                    .placeholder(R.drawable.placeholder)
-                    .into(holder.ivPizza);
+            Glide.with(context).load(url).placeholder(R.drawable.placeholder).into(holder.ivPizza);
         } else {
             holder.ivPizza.setImageResource(R.drawable.placeholder);
         }
 
-        // Quantity buttons
+        // Increase/Decrease quantity
         holder.btnIncrease.setOnClickListener(v -> {
             int qty = Integer.parseInt(holder.tvQuantity.getText().toString());
             holder.tvQuantity.setText(String.valueOf(qty + 1));
         });
-
         holder.btnDecrease.setOnClickListener(v -> {
             int qty = Integer.parseInt(holder.tvQuantity.getText().toString());
             if (qty > 1) holder.tvQuantity.setText(String.valueOf(qty - 1));
         });
 
-        // Add to Cart button
+        // Add to cart
         holder.btnAddToCart.setOnClickListener(v -> {
             int qty = Integer.parseInt(holder.tvQuantity.getText().toString());
+            pizza.setQuantity(qty);
+            dbHelper.addToCart(pizza);  // ✅ SQLite add
             Toast.makeText(context, pizza.getName() + " x" + qty + " added to cart!", Toast.LENGTH_SHORT).show();
-            // TODO: Add actual cart logic here
         });
     }
 

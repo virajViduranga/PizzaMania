@@ -3294,6 +3294,7 @@ id action_bar_root
 id action_bar_spinner
 id action_bar_subtitle
 id action_bar_title
+id action_cart
 id action_container
 id action_context_bar
 id action_divider
@@ -3346,9 +3347,10 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btnAddToCart
 id btnChangePassword
+id btnCheckout
 id btnDecrease
+id btnDelete
 id btnDirections
-id btnGoToCart
 id btnGoToLogin
 id btnGoToSignup
 id btnIncrease
@@ -3648,6 +3650,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rvCart
 id rvRecommended
 id satellite
 id save_non_transition_alpha
@@ -3749,6 +3752,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -3767,12 +3771,13 @@ id tvAccountInfo
 id tvAccountTitle
 id tvAppName
 id tvForgotPassword
-id tvHomeTitle
+id tvItemName
 id tvNearest
 id tvPizzaName
 id tvPizzaPrice
 id tvQuantity
 id tvSettingsTitle
+id tvTotal
 id tvWelcome
 id unchecked
 id uniform
@@ -3915,6 +3920,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_cart
 layout activity_login
 layout activity_main
 layout activity_maps
@@ -3943,6 +3949,10 @@ layout fragment_home
 layout fragment_settings
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_cart
+layout item_cart_dynamic
+layout item_cart_editable
+layout item_cart_row
 layout item_pizza
 layout item_pizza_with_cart
 layout m3_alert_dialog
@@ -4007,6 +4017,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu bottom_nav_menu
+menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
