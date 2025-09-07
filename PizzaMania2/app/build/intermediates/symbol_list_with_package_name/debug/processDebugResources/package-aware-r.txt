@@ -3214,6 +3214,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable pizza_logo
 drawable placeholder
+drawable quantity_bg
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3770,6 +3771,7 @@ id triangle
 id tvAccountInfo
 id tvAccountTitle
 id tvAppName
+id tvCartTitle
 id tvForgotPassword
 id tvItemName
 id tvNearest

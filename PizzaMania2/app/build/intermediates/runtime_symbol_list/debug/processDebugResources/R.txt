@@ -3213,6 +3213,7 @@ int drawable notification_tile_bg 0x7f070101
 int drawable notify_panel_notification_icon_bg 0x7f070102
 int drawable pizza_logo 0x7f070103
 int drawable placeholder 0x7f070107
+int drawable quantity_bg 0x7f070109
 int drawable test_level_drawable 0x7f070104
 int drawable tooltip_frame_dark 0x7f070105
 int drawable tooltip_frame_light 0x7f070106
@@ -3769,6 +3770,7 @@ int id triangle 0x7f09020b
 int id tvAccountInfo 0x7f09020c
 int id tvAccountTitle 0x7f09020d
 int id tvAppName 0x7f09020e
+int id tvCartTitle 0x7f090239
 int id tvForgotPassword 0x7f09020f
 int id tvItemName 0x7f09023d
 int id tvNearest 0x7f090211

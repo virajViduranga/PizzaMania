@@ -1,70 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
-    android:padding="12dp"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center_vertical"
-    android:background="#FFFFFF">
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="4dp"
+    android:background="@android:color/white">
 
-    <!-- Pizza Name -->
-    <TextView
-        android:id="@+id/tvPizzaName"
-        android:layout_width="0dp"
-        android:layout_weight="2"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pizza Name"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        android:textStyle="bold"/>
+        android:orientation="vertical"
+        android:padding="12dp">
 
-    <!-- Decrease Quantity -->
-    <Button
-        android:id="@+id/btnDecrease"
-        android:text="-"
-        android:textColor="#FFFFFF"
-        android:background="#cc2828"
-        android:layout_width="36dp"
-        android:layout_height="36dp"/>
+        <!-- Row: Name + Delete -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
 
-    <!-- Quantity Display -->
-    <TextView
-        android:id="@+id/tvQuantity"
-        android:text="1"
-        android:textSize="16sp"
-        android:textColor="#000000"
-        android:gravity="center"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginEnd="6dp"/>
+            <TextView
+                android:id="@+id/tvPizzaName"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Pizza Name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#222222"/>
 
-    <!-- Increase Quantity -->
-    <Button
-        android:id="@+id/btnIncrease"
-        android:text="+"
-        android:textColor="#FFFFFF"
-        android:background="#cc2828"
-        android:layout_width="36dp"
-        android:layout_height="36dp"/>
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:backgroundTint="#ff4444"
+                android:text="🗑"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
 
-    <!-- Delete Button -->
-    <Button
-        android:id="@+id/btnDelete"
-        android:text="🗑"
-        android:textColor="#FFFFFF"
-        android:background="#ff0000"
-        android:layout_width="wrap_content"
-        android:layout_height="36dp"
-        android:layout_marginStart="8dp"/>
+        <!-- Row: Quantity Controls + Price -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
 
-    <!-- Pizza Price -->
-    <TextView
-        android:id="@+id/tvPizzaPrice"
-        android:text="Rs 0"
-        android:textSize="16sp"
-        android:textColor="#000000"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"/>
-</LinearLayout>
+            <Button
+                android:id="@+id/btnDecrease"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:backgroundTint="#cc2828"
+                android:text="-"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/tvQuantity"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/quantity_bg"/>
+
+            <Button
+                android:id="@+id/btnIncrease"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:backgroundTint="#cc2828"
+                android:text="+"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/tvPizzaPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs 0"
+                android:textSize="16sp"
+                android:textColor="#222222"
+                android:layout_marginStart="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
