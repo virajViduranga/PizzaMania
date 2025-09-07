@@ -8,12 +8,14 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.bumptech.glide.Glide;
 import com.kosala.pizza_mania.R;
 import com.kosala.pizza_mania.models.Pizza;
-import com.google.firebase.firestore.DocumentReference;
+
 import java.util.List;
 
 public class RecommendedMenuAdapter extends RecyclerView.Adapter<RecommendedMenuAdapter.ViewHolder> {
@@ -39,31 +41,35 @@ public class RecommendedMenuAdapter extends RecyclerView.Adapter<RecommendedMenu
 
         holder.tvName.setText(pizza.getName());
         holder.tvPrice.setText("Rs " + pizza.getPrice());
+        holder.tvQuantity.setText("1");
 
-        // Load image from DocumentReference
-        DocumentReference imgRef = pizza.getImageUrl();
-        if (imgRef != null) {
-            imgRef.get()
-                    .addOnSuccessListener(doc -> {
-                        if (doc.exists()) {
-                            String url = doc.getString("url"); // Firestore field for image URL
-                            Glide.with(context)
-                                    .load(url)
-                                    .placeholder(R.drawable.placeholder)
-                                    .into(holder.ivPizza);
-                        } else {
-                            holder.ivPizza.setImageResource(R.drawable.placeholder);
-                        }
-                    })
-                    .addOnFailureListener(e -> holder.ivPizza.setImageResource(R.drawable.placeholder));
+        // Load image from URL
+        String url = pizza.getImageUrl();
+        if (url != null && !url.isEmpty()) {
+            Glide.with(context)
+                    .load(url)
+                    .placeholder(R.drawable.placeholder)
+                    .into(holder.ivPizza);
         } else {
             holder.ivPizza.setImageResource(R.drawable.placeholder);
         }
 
-        // Add to Cart button click
+        // Quantity buttons
+        holder.btnIncrease.setOnClickListener(v -> {
+            int qty = Integer.parseInt(holder.tvQuantity.getText().toString());
+            holder.tvQuantity.setText(String.valueOf(qty + 1));
+        });
+
+        holder.btnDecrease.setOnClickListener(v -> {
+            int qty = Integer.parseInt(holder.tvQuantity.getText().toString());
+            if (qty > 1) holder.tvQuantity.setText(String.valueOf(qty - 1));
+        });
+
+        // Add to Cart button
         holder.btnAddToCart.setOnClickListener(v -> {
-            Toast.makeText(context, pizza.getName() + " added to cart!", Toast.LENGTH_SHORT).show();
-            // You can add actual cart logic here
+            int qty = Integer.parseInt(holder.tvQuantity.getText().toString());
+            Toast.makeText(context, pizza.getName() + " x" + qty + " added to cart!", Toast.LENGTH_SHORT).show();
+            // TODO: Add actual cart logic here
         });
     }
 
@@ -74,15 +80,18 @@ public class RecommendedMenuAdapter extends RecyclerView.Adapter<RecommendedMenu
 
     static class ViewHolder extends RecyclerView.ViewHolder {
         ImageView ivPizza;
-        TextView tvName, tvPrice;
-        Button btnAddToCart;
+        TextView tvName, tvPrice, tvQuantity;
+        Button btnAddToCart, btnIncrease, btnDecrease;
 
         ViewHolder(@NonNull View itemView) {
             super(itemView);
             ivPizza = itemView.findViewById(R.id.ivPizza);
             tvName = itemView.findViewById(R.id.tvPizzaName);
             tvPrice = itemView.findViewById(R.id.tvPizzaPrice);
+            tvQuantity = itemView.findViewById(R.id.tvQuantity);
             btnAddToCart = itemView.findViewById(R.id.btnAddToCart);
+            btnIncrease = itemView.findViewById(R.id.btnIncrease);
+            btnDecrease = itemView.findViewById(R.id.btnDecrease);
         }
     }
 }

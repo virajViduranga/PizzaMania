@@ -3116,6 +3116,7 @@ int drawable ic_call_answer_video 0x7f0700a1
 int drawable ic_call_answer_video_low 0x7f0700a2
 int drawable ic_call_decline 0x7f0700a3
 int drawable ic_call_decline_low 0x7f0700a4
+int drawable ic_cart 0x7f070108
 int drawable ic_clear_black_24 0x7f0700a5
 int drawable ic_clock_black_24dp 0x7f0700a6
 int drawable ic_email 0x7f0700a7
@@ -3344,9 +3345,12 @@ int id browser_actions_menu_items 0x7f09006b
 int id browser_actions_menu_view 0x7f09006c
 int id btnAddToCart 0x7f090230
 int id btnChangePassword 0x7f09006d
+int id btnDecrease 0x7f090231
 int id btnDirections 0x7f09006e
+int id btnGoToCart 0x7f090232
 int id btnGoToLogin 0x7f09006f
 int id btnGoToSignup 0x7f090070
+int id btnIncrease 0x7f090233
 int id btnLogin 0x7f090071
 int id btnLogout 0x7f090072
 int id btnMyLocation 0x7f090073
@@ -3766,6 +3770,7 @@ int id tvHomeTitle 0x7f090210
 int id tvNearest 0x7f090211
 int id tvPizzaName 0x7f090212
 int id tvPizzaPrice 0x7f090213
+int id tvQuantity 0x7f090234
 int id tvSettingsTitle 0x7f090214
 int id tvWelcome 0x7f090215
 int id unchecked 0x7f090216

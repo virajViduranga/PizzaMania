@@ -31,6 +31,7 @@ color white_80
 color white_90
 drawable gradient_background
 drawable ic_account
+drawable ic_cart
 drawable ic_email
 drawable ic_google
 drawable ic_home
@@ -61,9 +62,12 @@ font poppins_thinitalic
 id bottom_navigation
 id btnAddToCart
 id btnChangePassword
+id btnDecrease
 id btnDirections
+id btnGoToCart
 id btnGoToLogin
 id btnGoToSignup
+id btnIncrease
 id btnLogin
 id btnLogout
 id btnMyLocation
@@ -96,6 +100,7 @@ id tvHomeTitle
 id tvNearest
 id tvPizzaName
 id tvPizzaPrice
+id tvQuantity
 id tvSettingsTitle
 id tvWelcome
 layout activity_login

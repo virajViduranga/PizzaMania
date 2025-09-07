@@ -1,15 +1,13 @@
 package com.kosala.pizza_mania.models;
 
-import com.google.firebase.firestore.DocumentReference;
-
 public class Pizza {
     private String name;
     private double price;
-    private DocumentReference imageUrl; // store Firestore reference
+    private String imageUrl; // 🔹 Now a String URL
 
     public Pizza() { }
 
-    public Pizza(String name, double price, DocumentReference imageUrl) {
+    public Pizza(String name, double price, String imageUrl) {
         this.name = name;
         this.price = price;
         this.imageUrl = imageUrl;
@@ -17,9 +15,9 @@ public class Pizza {
 
     public String getName() { return name; }
     public double getPrice() { return price; }
-    public DocumentReference getImageUrl() { return imageUrl; }
+    public String getImageUrl() { return imageUrl; }
 
     public void setName(String name) { this.name = name; }
     public void setPrice(double price) { this.price = price; }
-    public void setImageUrl(DocumentReference imageUrl) { this.imageUrl = imageUrl; }
+    public void setImageUrl(String imageUrl) { this.imageUrl = imageUrl; }
 }

@@ -3117,6 +3117,7 @@ drawable ic_call_answer_video
 drawable ic_call_answer_video_low
 drawable ic_call_decline
 drawable ic_call_decline_low
+drawable ic_cart
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_email
@@ -3345,9 +3346,12 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btnAddToCart
 id btnChangePassword
+id btnDecrease
 id btnDirections
+id btnGoToCart
 id btnGoToLogin
 id btnGoToSignup
+id btnIncrease
 id btnLogin
 id btnLogout
 id btnMyLocation
@@ -3767,6 +3771,7 @@ id tvHomeTitle
 id tvNearest
 id tvPizzaName
 id tvPizzaPrice
+id tvQuantity
 id tvSettingsTitle
 id tvWelcome
 id unchecked

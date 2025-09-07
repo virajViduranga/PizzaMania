@@ -1,40 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="16dp"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
+    <!-- Home Title -->
     <TextView
         android:id="@+id/tvHomeTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Home"
+        android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold" />
 
+    <!-- Cart Button top right -->
+    <Button
+        android:id="@+id/btnGoToCart"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_cart"
+        android:text=""
+        android:contentDescription="Cart" />
+
+    <!-- Nearest Branch -->
     <TextView
         android:id="@+id/tvNearest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tvHomeTitle"
+        android:layout_marginTop="12dp"
         android:text="Nearest branch will appear here"
-        android:layout_marginTop="12dp" />
+        android:textColor="#000000" />
 
-    <!-- 🔹 Add ProgressBar -->
+    <!-- ProgressBar -->
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_centerInParent="true"
         android:visibility="gone"
-        android:layout_marginTop="16dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <!-- RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvRecommended"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginTop="12dp"/>
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvNearest"
+        android:layout_marginTop="12dp" />
+</RelativeLayout>
