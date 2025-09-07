@@ -8,7 +8,7 @@
 8        android:minSdkVersion="24"
 9        android:targetSdkVersion="36" />
 10
-11    <!-- Permissions -->
+11    <!-- 🔹 Permissions -->
 12    <uses-permission android:name="android.permission.INTERNET" />
 12-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:6:5-67
 12-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:6:22-64
@@ -79,7 +79,7 @@
 49        android:theme="@style/Theme.PizzaMania" >
 49-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:18:9-48
 50
-51        <!-- Google Maps API Key -->
+51        <!-- 🔹 Google Maps API Key -->
 52        <meta-data
 52-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:21:9-23:71
 53            android:name="com.google.android.geo.API_KEY"
@@ -87,7 +87,7 @@
 54            android:value="AIzaSyC8-jtVYQXofkvg7Hhuqn9jY-BF4xT5WpY" />
 54-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:23:13-68
 55
-56        <!-- Main -->
+56        <!-- 🔹 Main Activity -->
 57        <activity
 57-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:26:9-28:39
 58            android:name="com.kosala.pizza_mania.MainActivity"
@@ -95,7 +95,7 @@
 59            android:exported="true" />
 59-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:28:13-36
 60
-61        <!-- Signup -->
+61        <!-- 🔹 Signup Activity -->
 62        <activity
 62-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:31:9-34:48
 63            android:name="com.kosala.pizza_mania.SignupActivity"
@@ -105,7 +105,7 @@
 65            android:theme="@style/AuthTheme" />
 65-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:34:13-45
 66
-67        <!-- Login (Launcher) -->
+67        <!-- 🔹 Login Activity (Launcher) -->
 68        <activity
 68-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:37:9-45:20
 69            android:name="com.kosala.pizza_mania.LoginActivity"
@@ -220,167 +220,179 @@
 127                android:value="com.google.firebase.components.ComponentRegistrar" />
 127-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\af6f47e81fd042022b049b62c865d28f\transformed\firebase-auth-23.0.0\AndroidManifest.xml:71:17-82
 128            <meta-data
-128-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\f0ae97b9b0f3657eecfed29348310d2f\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
-129                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-129-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\f0ae97b9b0f3657eecfed29348310d2f\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+128-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\f2611d0d60a038c84db753e5cb500a2c\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:17:13-19:85
+129                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+129-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\f2611d0d60a038c84db753e5cb500a2c\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:18:17-122
 130                android:value="com.google.firebase.components.ComponentRegistrar" />
-130-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\f0ae97b9b0f3657eecfed29348310d2f\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+130-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\f2611d0d60a038c84db753e5cb500a2c\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:19:17-82
 131            <meta-data
-131-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb4cb168456ec550fd55747df18d8398\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
-132                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-132-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb4cb168456ec550fd55747df18d8398\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+131-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\f2611d0d60a038c84db753e5cb500a2c\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:20:13-22:85
+132                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+132-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\f2611d0d60a038c84db753e5cb500a2c\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:21:17-111
 133                android:value="com.google.firebase.components.ComponentRegistrar" />
-133-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb4cb168456ec550fd55747df18d8398\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
-134        </service>
-135        <service
-135-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
-136            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
-136-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
-137            android:enabled="true"
-137-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
-138            android:exported="false" >
-138-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
-139            <meta-data
-139-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
-140                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
-140-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
-141                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
-141-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
-142        </service>
-143
-144        <activity
-144-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
-145            android:name="androidx.credentials.playservices.HiddenActivity"
-145-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
-146            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
-146-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
-147            android:enabled="true"
-147-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
-148            android:exported="false"
-148-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
-149            android:fitsSystemWindows="true"
-149-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
-150            android:theme="@style/Theme.Hidden" >
-150-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
-151        </activity>
-152        <activity
-152-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\bbdfa7734bbc4d000e3acda259870274\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
-153            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-153-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\bbdfa7734bbc4d000e3acda259870274\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
-154            android:excludeFromRecents="true"
-154-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\bbdfa7734bbc4d000e3acda259870274\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
-155            android:exported="false"
-155-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\bbdfa7734bbc4d000e3acda259870274\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
-156            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-156-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\bbdfa7734bbc4d000e3acda259870274\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
-157        <!--
-158            Service handling Google Sign-In user revocation. For apps that do not integrate with
-159            Google Sign-In, this service will never be started.
-160        -->
-161        <service
-161-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\bbdfa7734bbc4d000e3acda259870274\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
-162            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-162-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\bbdfa7734bbc4d000e3acda259870274\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
-163            android:exported="true"
-163-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\bbdfa7734bbc4d000e3acda259870274\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
-164            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-164-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\bbdfa7734bbc4d000e3acda259870274\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
-165            android:visibleToInstantApps="true" />
-165-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\bbdfa7734bbc4d000e3acda259870274\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
-166
-167        <activity
-167-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\049519d86e8d1c9415ebfd5360eddc46\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
-168            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-168-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\049519d86e8d1c9415ebfd5360eddc46\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
-169            android:exported="false"
-169-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\049519d86e8d1c9415ebfd5360eddc46\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
-170            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-170-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\049519d86e8d1c9415ebfd5360eddc46\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
-171
-172        <provider
-172-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb4cb168456ec550fd55747df18d8398\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
-173            android:name="com.google.firebase.provider.FirebaseInitProvider"
-173-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb4cb168456ec550fd55747df18d8398\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
-174            android:authorities="com.kosala.pizza_mania.firebaseinitprovider"
-174-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb4cb168456ec550fd55747df18d8398\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
-175            android:directBootAware="true"
-175-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb4cb168456ec550fd55747df18d8398\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
-176            android:exported="false"
-176-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb4cb168456ec550fd55747df18d8398\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
-177            android:initOrder="100" />
-177-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb4cb168456ec550fd55747df18d8398\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+133-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\f2611d0d60a038c84db753e5cb500a2c\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:22:17-82
+134            <meta-data
+134-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\f0ae97b9b0f3657eecfed29348310d2f\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+135                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+135-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\f0ae97b9b0f3657eecfed29348310d2f\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\f0ae97b9b0f3657eecfed29348310d2f\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+137            <meta-data
+137-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb4cb168456ec550fd55747df18d8398\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+138                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+138-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb4cb168456ec550fd55747df18d8398\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+139                android:value="com.google.firebase.components.ComponentRegistrar" />
+139-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb4cb168456ec550fd55747df18d8398\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+140        </service>
+141        <service
+141-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+142            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+142-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+143            android:enabled="true"
+143-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+144            android:exported="false" >
+144-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+145            <meta-data
+145-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+146                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+146-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+147                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+147-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+148        </service>
+149
+150        <activity
+150-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+151            android:name="androidx.credentials.playservices.HiddenActivity"
+151-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+152            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+152-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+153            android:enabled="true"
+153-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+154            android:exported="false"
+154-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+155            android:fitsSystemWindows="true"
+155-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+156            android:theme="@style/Theme.Hidden" >
+156-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb64c49c53882f7994e93ac7de9d1b28\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+157        </activity>
+158        <activity
+158-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\bbdfa7734bbc4d000e3acda259870274\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+159            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+159-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\bbdfa7734bbc4d000e3acda259870274\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+160            android:excludeFromRecents="true"
+160-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\bbdfa7734bbc4d000e3acda259870274\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+161            android:exported="false"
+161-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\bbdfa7734bbc4d000e3acda259870274\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+162            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+162-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\bbdfa7734bbc4d000e3acda259870274\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+163        <!--
+164            Service handling Google Sign-In user revocation. For apps that do not integrate with
+165            Google Sign-In, this service will never be started.
+166        -->
+167        <service
+167-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\bbdfa7734bbc4d000e3acda259870274\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+168            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+168-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\bbdfa7734bbc4d000e3acda259870274\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+169            android:exported="true"
+169-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\bbdfa7734bbc4d000e3acda259870274\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+170            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+170-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\bbdfa7734bbc4d000e3acda259870274\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+171            android:visibleToInstantApps="true" />
+171-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\bbdfa7734bbc4d000e3acda259870274\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+172
+173        <activity
+173-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\049519d86e8d1c9415ebfd5360eddc46\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+174            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+174-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\049519d86e8d1c9415ebfd5360eddc46\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+175            android:exported="false"
+175-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\049519d86e8d1c9415ebfd5360eddc46\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+176            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+176-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\049519d86e8d1c9415ebfd5360eddc46\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+177
 178        <provider
-178-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\35b1be89f8b0d45f91ff6eee06a8803b\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-179            android:name="androidx.startup.InitializationProvider"
-179-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\35b1be89f8b0d45f91ff6eee06a8803b\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-180            android:authorities="com.kosala.pizza_mania.androidx-startup"
-180-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\35b1be89f8b0d45f91ff6eee06a8803b\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-181            android:exported="false" >
-181-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\35b1be89f8b0d45f91ff6eee06a8803b\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-182            <meta-data
-182-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\35b1be89f8b0d45f91ff6eee06a8803b\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-183                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-183-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\35b1be89f8b0d45f91ff6eee06a8803b\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-184                android:value="androidx.startup" />
-184-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\35b1be89f8b0d45f91ff6eee06a8803b\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-185            <meta-data
-185-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ASUS4\.gradle\caches\8.13\transforms\a12c11d9ffd8b3aa147702c5de012d82\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-186                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-186-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ASUS4\.gradle\caches\8.13\transforms\a12c11d9ffd8b3aa147702c5de012d82\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
-187                android:value="androidx.startup" />
-187-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ASUS4\.gradle\caches\8.13\transforms\a12c11d9ffd8b3aa147702c5de012d82\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+178-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb4cb168456ec550fd55747df18d8398\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+179            android:name="com.google.firebase.provider.FirebaseInitProvider"
+179-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb4cb168456ec550fd55747df18d8398\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+180            android:authorities="com.kosala.pizza_mania.firebaseinitprovider"
+180-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb4cb168456ec550fd55747df18d8398\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+181            android:directBootAware="true"
+181-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb4cb168456ec550fd55747df18d8398\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+182            android:exported="false"
+182-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb4cb168456ec550fd55747df18d8398\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+183            android:initOrder="100" />
+183-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\cb4cb168456ec550fd55747df18d8398\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+184        <provider
+184-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\35b1be89f8b0d45f91ff6eee06a8803b\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+185            android:name="androidx.startup.InitializationProvider"
+185-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\35b1be89f8b0d45f91ff6eee06a8803b\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+186            android:authorities="com.kosala.pizza_mania.androidx-startup"
+186-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\35b1be89f8b0d45f91ff6eee06a8803b\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+187            android:exported="false" >
+187-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\35b1be89f8b0d45f91ff6eee06a8803b\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
 188            <meta-data
-188-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
-189                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-189-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+188-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\35b1be89f8b0d45f91ff6eee06a8803b\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+189                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+189-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\35b1be89f8b0d45f91ff6eee06a8803b\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
 190                android:value="androidx.startup" />
-190-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
-191        </provider>
-192
-193        <meta-data
-193-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\151b5cf3ee9ce64bcf8b86ac788a0818\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
-194            android:name="com.google.android.gms.version"
-194-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\151b5cf3ee9ce64bcf8b86ac788a0818\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
-195            android:value="@integer/google_play_services_version" />
-195-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\151b5cf3ee9ce64bcf8b86ac788a0818\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
-196
-197        <receiver
-197-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
-198            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-198-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
-199            android:directBootAware="false"
-199-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
-200            android:enabled="true"
-200-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
-201            android:exported="true"
-201-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
-202            android:permission="android.permission.DUMP" >
-202-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
-203            <intent-filter>
-203-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
-204                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-204-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
-204-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
-205            </intent-filter>
-206            <intent-filter>
-206-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
-207                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-207-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
-207-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
-208            </intent-filter>
+190-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\35b1be89f8b0d45f91ff6eee06a8803b\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+191            <meta-data
+191-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ASUS4\.gradle\caches\8.13\transforms\a12c11d9ffd8b3aa147702c5de012d82\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+192                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+192-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ASUS4\.gradle\caches\8.13\transforms\a12c11d9ffd8b3aa147702c5de012d82\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+193                android:value="androidx.startup" />
+193-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ASUS4\.gradle\caches\8.13\transforms\a12c11d9ffd8b3aa147702c5de012d82\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+194            <meta-data
+194-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+195                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+195-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+196                android:value="androidx.startup" />
+196-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+197        </provider>
+198
+199        <meta-data
+199-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\151b5cf3ee9ce64bcf8b86ac788a0818\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+200            android:name="com.google.android.gms.version"
+200-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\151b5cf3ee9ce64bcf8b86ac788a0818\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+201            android:value="@integer/google_play_services_version" />
+201-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\151b5cf3ee9ce64bcf8b86ac788a0818\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+202
+203        <receiver
+203-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+204            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+204-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+205            android:directBootAware="false"
+205-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+206            android:enabled="true"
+206-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+207            android:exported="true"
+207-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+208            android:permission="android.permission.DUMP" >
+208-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
 209            <intent-filter>
-209-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
-210                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-210-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
-210-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+209-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+210                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+210-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+210-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
 211            </intent-filter>
 212            <intent-filter>
-212-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
-213                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-213-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
-213-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+212-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+213                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+213-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+213-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
 214            </intent-filter>
-215        </receiver>
-216    </application>
-217
-218</manifest>
+215            <intent-filter>
+215-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+216                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+216-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+216-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+217            </intent-filter>
+218            <intent-filter>
+218-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+219                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+219-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+219-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\2d9e865dfc79f3528089d7f27c25b1de\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+220            </intent-filter>
+221        </receiver>
+222    </application>
+223
+224</manifest>

@@ -52,7 +52,12 @@ dependencies {
     // Firebase BOM (manages versions)
     implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
     implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.firebase:firebase-firestore") // ✅ Firestore for branches/menu
 
     // Extra UI components
     implementation("androidx.cardview:cardview:1.0.0")
+
+    // ✅ Glide (for pizza images)
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
 }

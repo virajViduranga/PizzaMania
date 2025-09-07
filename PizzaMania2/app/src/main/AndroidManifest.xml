@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Permissions -->
+    <!-- 🔹 Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -17,23 +17,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PizzaMania">
 
-        <!-- Google Maps API Key -->
+        <!-- 🔹 Google Maps API Key -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="--------" />
+            android:value="AIzaSyC8-jtVYQXofkvg7Hhuqn9jY-BF4xT5WpY" />
 
-        <!-- Main -->
+        <!-- 🔹 Main Activity -->
         <activity
             android:name=".MainActivity"
             android:exported="true" />
 
-        <!-- Signup -->
+        <!-- 🔹 Signup Activity -->
         <activity
             android:name=".SignupActivity"
             android:exported="true"
             android:theme="@style/AuthTheme" />
 
-        <!-- Login (Launcher) -->
+        <!-- 🔹 Login Activity (Launcher) -->
         <activity
             android:name=".LoginActivity"
             android:theme="@style/AuthTheme"

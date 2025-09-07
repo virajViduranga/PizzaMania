@@ -7,7 +7,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
-    BottomNavigationView bottomNavigationView;
+    private BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,15 +16,15 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        // default fragment
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragment_container, new HomeFragment())
-                .commit();
+        // ✅ Load default fragment safely
+        if (savedInstanceState == null) {
+            replaceFragment(new HomeFragment());
+        }
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
             Fragment selected = null;
-            int itemId = item.getItemId(); // Get the item ID once
 
+            int itemId = item.getItemId();
             if (itemId == R.id.nav_home) {
                 selected = new HomeFragment();
             } else if (itemId == R.id.nav_account) {
@@ -34,11 +34,21 @@ public class MainActivity extends AppCompatActivity {
             }
 
             if (selected != null) {
-                getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragment_container, selected)
-                        .commit();
+                replaceFragment(selected);
             }
             return true;
         });
+    }
+
+    // ✅ Safe fragment replacement method
+    private void replaceFragment(Fragment fragment) {
+        try {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragment_container, fragment)
+                    .commitAllowingStateLoss(); // prevents crash if state saved
+        } catch (IllegalStateException e) {
+            e.printStackTrace();
+        }
     }
 }

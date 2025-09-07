@@ -20,7 +20,17 @@
         android:text="Nearest branch will appear here"
         android:layout_marginTop="12dp" />
 
-    <!-- Placeholder for recommended menu (RecyclerView) -->
+    <!-- 🔹 Add ProgressBar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"/>
+
+    <!-- RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvRecommended"
         android:layout_width="match_parent"

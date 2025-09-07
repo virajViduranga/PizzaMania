@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.kosala.pizza_mania.app-mergeDebugResources-39:/values-my/values-my.xml",
+            "outputFile": "com.kosala.pizza_mania.app-mergeDebugResources-40:/values-my/values-my.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ASUS4\\.gradle\\caches\\8.13\\transforms\\049519d86e8d1c9415ebfd5360eddc46\\transformed\\play-services-base-18.5.0\\res\\values-my\\values.xml",
