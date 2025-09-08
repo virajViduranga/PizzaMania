@@ -1,14 +1,18 @@
 package com.kosala.pizza_mania;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.kosala.pizza_mania.adapters.CartAdapter;
 import com.kosala.pizza_mania.models.Pizza;
 import com.kosala.pizza_mania.utils.CartDatabaseHelper;
+
 import java.util.List;
 
 public class CartActivity extends AppCompatActivity {
@@ -33,9 +37,10 @@ public class CartActivity extends AppCompatActivity {
 
         loadCartItems();
 
+        // ✅ Now go to CheckoutActivity instead of clearing cart directly
         btnCheckout.setOnClickListener(v -> {
-            dbHelper.clearCart();
-            loadCartItems();
+            Intent intent = new Intent(CartActivity.this, CheckoutActivity.class);
+            startActivity(intent);
         });
     }
 

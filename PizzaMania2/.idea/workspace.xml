@@ -5,6 +5,16 @@
       <config />
     </shared>
     <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/edittext_bg.xml">
+        <config>
+          <theme>@style/Theme.PizzaMania</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/et_border.xml">
+        <config>
+          <theme>@style/Theme.PizzaMania</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/gradient_background.xml">
         <config>
           <theme>@style/Theme.PizzaMania</theme>
@@ -25,7 +35,32 @@
           <theme>@style/Theme.PizzaMania</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/rounded_card.xml">
+        <config>
+          <theme>@style/Theme.PizzaMania</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/rounded_card_background.xml">
+        <config>
+          <theme>@style/Theme.PizzaMania</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/rounded_edittext.xml">
+        <config>
+          <theme>@style/Theme.PizzaMania</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/rounded_image_bg.xml">
+        <config>
+          <theme>@style/Theme.PizzaMania</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cart.xml">
+        <config>
+          <theme>@style/Theme.PizzaMania</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_checkout.xml">
         <config>
           <theme>@style/Theme.PizzaMania</theme>
         </config>
@@ -41,6 +76,11 @@
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
+        <config>
+          <theme>@style/Theme.PizzaMania</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_payment.xml">
         <config>
           <theme>@style/Theme.PizzaMania</theme>
         </config>
@@ -73,6 +113,7 @@
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_cart.xml">
         <config>
+          <state>Portrait</state>
           <theme>@style/Theme.PizzaMania</theme>
         </config>
       </layout>
@@ -136,8 +177,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="valueResourceFile" />
-        <option value="Class" />
         <option value="layoutResourceFile" />
+        <option value="Class" />
         <option value="resourceFile" />
       </list>
     </option>
@@ -268,12 +309,12 @@
       <map>
         <entry key="com.kosala.pizza_mania">
           <value>
-            <CheckInfo lastCheckTimestamp="1757187206014" />
+            <CheckInfo lastCheckTimestamp="1757307385863" />
           </value>
         </entry>
         <entry key="com.kosala.pizza_mania.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1757187205993" />
+            <CheckInfo lastCheckTimestamp="1757307385863" />
           </value>
         </entry>
       </map>

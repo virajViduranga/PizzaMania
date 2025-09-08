@@ -1,90 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    card_view:cardCornerRadius="12dp"
-    card_view:cardElevation="4dp"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    android:elevation="4dp"
+    android:layout_marginBottom="10dp"
+    android:clipToPadding="false">
 
+    <!-- Top row: Name (left) + Price (right) -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="12dp">
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="6dp">
 
-        <!-- Row: Name + Delete -->
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tvPizzaName"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:layout_weight="1"
+            android:text="Pizza Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
 
-            <TextView
-                android:id="@+id/tvPizzaName"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="Pizza Name"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="#222222"/>
-
-            <Button
-                android:id="@+id/btnDelete"
-                android:layout_width="wrap_content"
-                android:layout_height="36dp"
-                android:backgroundTint="#ff4444"
-                android:text="🗑"
-                android:textColor="#FFFFFF"/>
-        </LinearLayout>
-
-        <!-- Row: Quantity Controls + Price -->
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tvPizzaPrice"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:layout_marginTop="8dp">
-
-            <Button
-                android:id="@+id/btnDecrease"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:backgroundTint="#cc2828"
-                android:text="-"
-                android:textColor="#FFFFFF"/>
-
-            <TextView
-                android:id="@+id/tvQuantity"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:gravity="center"
-                android:text="1"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:layout_marginStart="6dp"
-                android:layout_marginEnd="6dp"
-                android:background="@drawable/quantity_bg"/>
-
-            <Button
-                android:id="@+id/btnIncrease"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:backgroundTint="#cc2828"
-                android:text="+"
-                android:textColor="#FFFFFF"/>
-
-            <TextView
-                android:id="@+id/tvPizzaPrice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Rs 0"
-                android:textSize="16sp"
-                android:textColor="#222222"
-                android:layout_marginStart="16dp"
-                android:textStyle="bold"/>
-        </LinearLayout>
+            android:text="Rs 500"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#cc2828" />
     </LinearLayout>
-</androidx.cardview.widget.CardView>
+
+    <!-- Bottom row: quantity controls + remove -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp">
+
+        <Button
+            android:id="@+id/btnDecrease"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="-"
+            android:backgroundTint="#DDDDDD"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvQuantity"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btnIncrease"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="+"
+            android:backgroundTint="#DDDDDD"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Remove"
+            android:backgroundTint="#cc2828"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

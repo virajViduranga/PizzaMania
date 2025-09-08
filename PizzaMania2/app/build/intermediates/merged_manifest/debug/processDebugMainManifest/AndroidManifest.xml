@@ -81,6 +81,7 @@
         <activity
             android:name="com.kosala.pizza_mania.CartActivity"
             android:exported="false" />
+        <activity android:name="com.kosala.pizza_mania.CheckoutActivity" />
 
         <!-- Needs to be explicitly declared on P+ -->
         <uses-library

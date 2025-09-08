@@ -50,6 +50,10 @@
         <activity android:name=".CartActivity" android:exported="false"/>
 
 
+        <activity android:name=".CheckoutActivity" />
+
+
+
     </application>
 
 </manifest>
