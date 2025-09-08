@@ -35,6 +35,7 @@ drawable gradient_background
 drawable ic_account
 drawable ic_card
 drawable ic_cart
+drawable ic_close_black
 drawable ic_cod
 drawable ic_email
 drawable ic_google
@@ -43,6 +44,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_lock
 drawable ic_online
+drawable ic_search_black
 drawable ic_settings
 drawable pizza_logo
 drawable placeholder
@@ -51,6 +53,8 @@ drawable rounded_card
 drawable rounded_card_background
 drawable rounded_edittext
 drawable rounded_image_bg
+drawable search_background
+drawable search_rounded
 font poppins_black
 font poppins_blackitalic
 font poppins_bold
@@ -117,6 +121,7 @@ id rbOnline
 id rgPaymentMethod
 id rvCart
 id rvRecommended
+id searchView
 id tilEmail
 id tilPassword
 id toolbar
@@ -136,6 +141,7 @@ id tvPizzaName
 id tvPizzaPrice
 id tvQuantity
 id tvSettingsTitle
+id tvTitle
 id tvTotal
 id tvWelcome
 layout activity_cart

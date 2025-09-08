@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\mipmap-mdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\menu_bottom_nav_menu.xml.flat",
@@ -30,6 +30,10 @@
     {
         "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\drawable_search_background.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\drawable\\search_background.xml"
     },
     {
         "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\mipmap-hdpi_ic_launcher_round.webp.flat",
@@ -70,6 +74,10 @@
     {
         "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\font_poppins_mediumitalic.ttf.flat",
         "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\font\\poppins_mediumitalic.ttf"
+    },
+    {
+        "merged": "com.kosala.pizza_mania.app-debug-42:/drawable_search_rounded.xml.flat",
+        "source": "com.kosala.pizza_mania.app-main-44:/drawable/search_rounded.xml"
     },
     {
         "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\font_poppins_italic.ttf.flat",
@@ -148,8 +156,8 @@
         "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\drawable\\quantity_bg.xml"
     },
     {
-        "merged": "com.kosala.pizza_mania.app-debug-42:/layout_activity_checkout.xml.flat",
-        "source": "com.kosala.pizza_mania.app-main-44:/layout/activity_checkout.xml"
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\drawable_ic_search_black.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\drawable\\ic_search_black.xml"
     },
     {
         "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\layout_item_cart.xml.flat",
@@ -256,8 +264,16 @@
         "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\font\\poppins_medium.ttf"
     },
     {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\drawable_ic_close_black.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\drawable\\ic_close_black.xml"
+    },
+    {
         "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\font_poppins_thin.ttf.flat",
         "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\font\\poppins_thin.ttf"
+    },
+    {
+        "merged": "com.kosala.pizza_mania.app-debug-42:/layout_fragment_home.xml.flat",
+        "source": "com.kosala.pizza_mania.app-main-44:/layout/fragment_home.xml"
     },
     {
         "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\layout_item_cart_row.xml.flat",

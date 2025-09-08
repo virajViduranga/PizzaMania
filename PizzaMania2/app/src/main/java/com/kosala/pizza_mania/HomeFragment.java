@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
@@ -46,6 +47,7 @@ public class HomeFragment extends Fragment {
     private ProgressBar progressBar;
     private TextView tvNearest;
     private FusedLocationProviderClient fusedLocationProviderClient;
+    private SearchView searchView;
 
     public HomeFragment() { }
 
@@ -55,20 +57,25 @@ public class HomeFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        setHasOptionsMenu(true); // ✅ Show menu in toolbar
+        setHasOptionsMenu(true); // enable menu in toolbar
 
-        // ✅ Toolbar setup
+        // Setup Toolbar (unchanged)
         Toolbar toolbar = view.findViewById(R.id.toolbar);
         if (getActivity() instanceof AppCompatActivity) {
-            ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
+            AppCompatActivity activity = (AppCompatActivity) getActivity();
+            activity.setSupportActionBar(toolbar);
+            if (activity.getSupportActionBar() != null) {
+                activity.getSupportActionBar().setDisplayShowTitleEnabled(false);
+            }
         }
 
         rvRecommended = view.findViewById(R.id.rvRecommended);
         progressBar = view.findViewById(R.id.progressBar);
         tvNearest = view.findViewById(R.id.tvNearest);
+        searchView = view.findViewById(R.id.searchView);
+
         pizzaList = new ArrayList<>();
         db = FirebaseFirestore.getInstance();
-
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(requireActivity());
 
         rvRecommended.setLayoutManager(new LinearLayoutManager(getContext()));
@@ -77,7 +84,66 @@ public class HomeFragment extends Fragment {
 
         requestLocationPermission();
 
+        setupSearchBar(); // ✅ Only this changes the SearchView colors
+
         return view;
+    }
+
+    private void setupSearchBar() {
+        // ✅ Typed letters black & hint gray
+        int id = searchView.getContext().getResources()
+                .getIdentifier("android:id/search_src_text", null, null);
+        TextView searchText = searchView.findViewById(id);
+        if (searchText != null) {
+            searchText.setTextColor(getResources().getColor(android.R.color.black));
+            searchText.setHintTextColor(getResources().getColor(android.R.color.darker_gray));
+        }
+
+        // ✅ Magnifier icon black
+        int searchMagId = searchView.getContext().getResources()
+                .getIdentifier("android:id/search_mag_icon", null, null);
+        View searchIcon = searchView.findViewById(searchMagId);
+        if (searchIcon != null && searchIcon instanceof android.widget.ImageView) {
+            ((android.widget.ImageView) searchIcon).setColorFilter(
+                    getResources().getColor(android.R.color.black));
+        }
+
+        // ✅ Close (x) icon black
+        int closeBtnId = searchView.getContext().getResources()
+                .getIdentifier("android:id/search_close_btn", null, null);
+        View closeBtn = searchView.findViewById(closeBtnId);
+        if (closeBtn != null && closeBtn instanceof android.widget.ImageView) {
+            ((android.widget.ImageView) closeBtn).setColorFilter(
+                    getResources().getColor(android.R.color.black));
+        }
+
+        searchView.setIconifiedByDefault(false);
+
+        // Add filtering
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                filterPizzas(query);
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                filterPizzas(newText);
+                return true;
+            }
+        });
+    }
+
+    private void filterPizzas(String query) {
+        List<Pizza> filtered = new ArrayList<>();
+        for (Pizza pizza : pizzaList) {
+            if (pizza.getName().toLowerCase().contains(query.toLowerCase())) {
+                filtered.add(pizza);
+            }
+        }
+        adapter = new RecommendedMenuAdapter(getContext(), filtered);
+        rvRecommended.setAdapter(adapter);
     }
 
     private void requestLocationPermission() {
@@ -188,7 +254,6 @@ public class HomeFragment extends Fragment {
                 });
     }
 
-    // ✅ Toolbar Menu
     @Override
     public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
         inflater.inflate(R.menu.menu_main, menu);

@@ -3123,6 +3123,7 @@ drawable ic_card
 drawable ic_cart
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_close_black
 drawable ic_cod
 drawable ic_email
 drawable ic_google
@@ -3142,6 +3143,7 @@ drawable ic_online
 drawable ic_other_sign_in
 drawable ic_passkey
 drawable ic_password
+drawable ic_search_black
 drawable ic_search_black_24
 drawable ic_settings
 drawable indeterminate_static
@@ -3224,6 +3226,8 @@ drawable rounded_card
 drawable rounded_card_background
 drawable rounded_edittext
 drawable rounded_image_bg
+drawable search_background
+drawable search_rounded
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3687,6 +3691,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id searchView
 id search_badge
 id search_bar
 id search_button
@@ -3807,6 +3812,7 @@ id tvPizzaName
 id tvPizzaPrice
 id tvQuantity
 id tvSettingsTitle
+id tvTitle
 id tvTotal
 id tvWelcome
 id unchecked

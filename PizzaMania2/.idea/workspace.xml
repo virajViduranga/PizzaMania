@@ -20,6 +20,11 @@
           <theme>@style/Theme.PizzaMania</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_close_black.xml">
+        <config>
+          <theme>@style/Theme.PizzaMania</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml">
         <config>
           <theme>@style/AppTheme</theme>
@@ -28,6 +33,11 @@
       <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml">
         <config>
           <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_search_black.xml">
+        <config>
+          <theme>@style/Theme.PizzaMania</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/quantity_bg.xml">
@@ -51,6 +61,16 @@
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/rounded_image_bg.xml">
+        <config>
+          <theme>@style/Theme.PizzaMania</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/search_background.xml">
+        <config>
+          <theme>@style/Theme.PizzaMania</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/search_rounded.xml">
         <config>
           <theme>@style/Theme.PizzaMania</theme>
         </config>
@@ -102,7 +122,6 @@
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
         <config>
-          <state>Portrait</state>
           <theme>@style/Theme.PizzaMania</theme>
         </config>
       </layout>
@@ -113,7 +132,6 @@
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_cart.xml">
         <config>
-          <state>Portrait</state>
           <theme>@style/Theme.PizzaMania</theme>
         </config>
       </layout>
@@ -124,6 +142,7 @@
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_cart_editable.xml">
         <config>
+          <state>landscape</state>
           <theme>@style/Theme.PizzaMania</theme>
         </config>
       </layout>

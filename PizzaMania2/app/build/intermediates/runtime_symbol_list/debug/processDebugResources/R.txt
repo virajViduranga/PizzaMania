@@ -3122,6 +3122,7 @@ int drawable ic_card 0x7f0700a6
 int drawable ic_cart 0x7f0700a7
 int drawable ic_clear_black_24 0x7f0700a8
 int drawable ic_clock_black_24dp 0x7f0700a9
+int drawable ic_close_black 0x7f070114
 int drawable ic_cod 0x7f0700aa
 int drawable ic_email 0x7f0700ab
 int drawable ic_google 0x7f0700ac
@@ -3141,6 +3142,7 @@ int drawable ic_online 0x7f0700b9
 int drawable ic_other_sign_in 0x7f0700ba
 int drawable ic_passkey 0x7f0700bb
 int drawable ic_password 0x7f0700bc
+int drawable ic_search_black 0x7f070115
 int drawable ic_search_black_24 0x7f0700bd
 int drawable ic_settings 0x7f0700be
 int drawable indeterminate_static 0x7f0700bf
@@ -3223,6 +3225,8 @@ int drawable rounded_card 0x7f07010b
 int drawable rounded_card_background 0x7f07010c
 int drawable rounded_edittext 0x7f07010d
 int drawable rounded_image_bg 0x7f07010e
+int drawable search_background 0x7f070113
+int drawable search_rounded 0x7f070116
 int drawable test_level_drawable 0x7f07010f
 int drawable tooltip_frame_dark 0x7f070110
 int drawable tooltip_frame_light 0x7f070111
@@ -3686,6 +3690,7 @@ int id scrollIndicatorDown 0x7f0901b6
 int id scrollIndicatorUp 0x7f0901b7
 int id scrollView 0x7f0901b8
 int id scrollable 0x7f0901b9
+int id searchView 0x7f09024f
 int id search_badge 0x7f0901ba
 int id search_bar 0x7f0901bb
 int id search_button 0x7f0901bc
@@ -3806,6 +3811,7 @@ int id tvPizzaName 0x7f090229
 int id tvPizzaPrice 0x7f09022a
 int id tvQuantity 0x7f09022b
 int id tvSettingsTitle 0x7f09022c
+int id tvTitle 0x7f09024e
 int id tvTotal 0x7f09022d
 int id tvWelcome 0x7f09022e
 int id unchecked 0x7f09022f
