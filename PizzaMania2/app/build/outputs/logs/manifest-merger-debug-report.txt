@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-59:12
+ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-62:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\8a3d23e371eaddcc1dbdb2a493660723\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\ASUS4\.gradle\caches\8.13\transforms\fb38dbbfb3294253991d3d0258f1ff96\transformed\constraintlayout-2.2.1\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.1] C:\Users\ASUS4\.gradle\caches\8.13\transforms\b971b879c43dba7f04a69cd2be9b7b01\transformed\appcompat-resources-1.7.1\AndroidManifest.xml:2:1-7:12
@@ -105,8 +105,8 @@ ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:8:5-81
 	android:name
 		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:8:22-78
 application
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:10:5-57:19
-INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:10:5-57:19
+ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:10:5-60:19
+INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:10:5-60:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\8a3d23e371eaddcc1dbdb2a493660723\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\8a3d23e371eaddcc1dbdb2a493660723\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\ASUS4\.gradle\caches\8.13\transforms\fb38dbbfb3294253991d3d0258f1ff96\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
@@ -221,6 +221,12 @@ activity#com.kosala.pizza_mania.CheckoutActivity
 ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:53:9-54
 	android:name
 		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:53:19-51
+activity#com.kosala.pizza_mania.MapFragment
+ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:55:9-73
+	android:exported
+		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:55:47-71
+	android:name
+		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:55:19-46
 uses-sdk
 INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml

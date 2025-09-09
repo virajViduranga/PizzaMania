@@ -82,6 +82,9 @@
             android:name="com.kosala.pizza_mania.CartActivity"
             android:exported="false" />
         <activity android:name="com.kosala.pizza_mania.CheckoutActivity" />
+        <activity
+            android:name="com.kosala.pizza_mania.MapFragment"
+            android:exported="false" />
 
         <!-- Needs to be explicitly declared on P+ -->
         <uses-library

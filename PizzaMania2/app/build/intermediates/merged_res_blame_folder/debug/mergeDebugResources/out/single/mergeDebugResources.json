@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
         "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
         "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\menu_bottom_nav_menu.xml.flat",
@@ -48,6 +48,10 @@
         "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\layout\\activity_checkout.xml"
     },
     {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\layout_activity_location_select.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\layout\\activity_location_select.xml"
+    },
+    {
         "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\layout_item_cart_dynamic.xml.flat",
         "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\layout\\item_cart_dynamic.xml"
     },
@@ -76,8 +80,8 @@
         "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\font\\poppins_mediumitalic.ttf"
     },
     {
-        "merged": "com.kosala.pizza_mania.app-debug-42:/drawable_search_rounded.xml.flat",
-        "source": "com.kosala.pizza_mania.app-main-44:/drawable/search_rounded.xml"
+        "merged": "com.kosala.pizza_mania.app-debug-42:/drawable_ic_map.png.flat",
+        "source": "com.kosala.pizza_mania.app-main-44:/drawable/ic_map.png"
     },
     {
         "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\font_poppins_italic.ttf.flat",
@@ -208,6 +212,10 @@
         "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\layout\\dialog_forgot_password.xml"
     },
     {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\layout_fragment_map.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\layout\\fragment_map.xml"
+    },
+    {
         "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\font_poppins_semibold.ttf.flat",
         "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\font\\poppins_semibold.ttf"
     },
@@ -272,10 +280,6 @@
         "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\font\\poppins_thin.ttf"
     },
     {
-        "merged": "com.kosala.pizza_mania.app-debug-42:/layout_fragment_home.xml.flat",
-        "source": "com.kosala.pizza_mania.app-main-44:/layout/fragment_home.xml"
-    },
-    {
         "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\layout_item_cart_row.xml.flat",
         "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\layout\\item_cart_row.xml"
     },
@@ -294,6 +298,10 @@
     {
         "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\drawable_rounded_edittext.xml.flat",
         "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\drawable\\rounded_edittext.xml"
+    },
+    {
+        "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\drawable_search_rounded.xml.flat",
+        "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\drawable\\search_rounded.xml"
     },
     {
         "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\drawable_ic_cart.png.flat",
@@ -326,6 +334,10 @@
     {
         "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\font_poppins_semibolditalic.ttf.flat",
         "source": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-main-44:\\font\\poppins_semibolditalic.ttf"
+    },
+    {
+        "merged": "com.kosala.pizza_mania.app-debug-42:/menu_bottom_navigation.xml.flat",
+        "source": "com.kosala.pizza_mania.app-main-44:/menu/bottom_navigation.xml"
     },
     {
         "merged": "C:\\Users\\ASUS4\\.gradle\\daemon\\8.13\\com.kosala.pizza_mania.app-debug-42:\\drawable_et_border.xml.flat",

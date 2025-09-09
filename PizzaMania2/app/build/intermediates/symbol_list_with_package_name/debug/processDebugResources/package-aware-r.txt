@@ -3135,6 +3135,7 @@ drawable ic_lock
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
+drawable ic_map
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -3362,6 +3363,7 @@ id browser_actions_menu_view
 id btnAddToCart
 id btnChangePassword
 id btnCheckout
+id btnConfirmPayment
 id btnDecrease
 id btnDelete
 id btnDirections
@@ -3545,6 +3547,7 @@ id llCardDetails
 id llLoginLink
 id m3_side_sheet
 id map
+id mapFragment
 id marquee
 id masked
 id match_constraint
@@ -3606,6 +3609,7 @@ id mtrl_view_tag_bottom_padding
 id multiply
 id nav_account
 id nav_home
+id nav_map
 id nav_settings
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
@@ -3958,6 +3962,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_cart
 layout activity_checkout
+layout activity_location_select
 layout activity_login
 layout activity_main
 layout activity_maps
@@ -3984,6 +3989,7 @@ layout design_text_input_start_icon
 layout dialog_forgot_password
 layout fragment_account
 layout fragment_home
+layout fragment_map
 layout fragment_settings
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
@@ -4055,6 +4061,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu bottom_nav_menu
+menu bottom_navigation
 menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_foreground

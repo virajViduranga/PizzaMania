@@ -43,6 +43,7 @@ drawable ic_home
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_lock
+drawable ic_map
 drawable ic_online
 drawable ic_search_black
 drawable ic_settings
@@ -78,6 +79,7 @@ id bottom_navigation
 id btnAddToCart
 id btnChangePassword
 id btnCheckout
+id btnConfirmPayment
 id btnDecrease
 id btnDelete
 id btnDirections
@@ -111,8 +113,10 @@ id layoutCardDetails
 id llCardDetails
 id llLoginLink
 id map
+id mapFragment
 id nav_account
 id nav_home
+id nav_map
 id nav_settings
 id progressBar
 id rbCOD
@@ -146,6 +150,7 @@ id tvTotal
 id tvWelcome
 layout activity_cart
 layout activity_checkout
+layout activity_location_select
 layout activity_login
 layout activity_main
 layout activity_maps
@@ -154,6 +159,7 @@ layout activity_signup
 layout dialog_forgot_password
 layout fragment_account
 layout fragment_home
+layout fragment_map
 layout fragment_settings
 layout item_cart
 layout item_cart_dynamic
@@ -162,6 +168,7 @@ layout item_cart_row
 layout item_pizza
 layout item_pizza_with_cart
 menu bottom_nav_menu
+menu bottom_navigation
 menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_foreground

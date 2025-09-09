@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
                 selected = new AccountFragment();
             } else if (itemId == R.id.nav_settings) {
                 selected = new SettingsFragment();
+            } else if (itemId == R.id.nav_map) {  // ✅ Added Map option
+                selected = new MapFragment();
             }
 
             if (selected != null) {

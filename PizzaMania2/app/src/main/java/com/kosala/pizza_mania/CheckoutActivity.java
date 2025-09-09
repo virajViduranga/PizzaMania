@@ -1,5 +1,6 @@
 package com.kosala.pizza_mania;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.TypedValue;
@@ -29,7 +30,6 @@ public class CheckoutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // ✅ use the correct layout
         setContentView(R.layout.activity_checkout);
 
         // Initialize views
@@ -99,6 +99,7 @@ public class CheckoutActivity extends AppCompatActivity {
             return;
         }
 
+        // If Card Payment selected → validate details
         if (checkedId == R.id.rbCard) {
             String name = etCardName.getText().toString().trim();
             String card = etCardNumber.getText().toString().trim().replaceAll("\\s+", "");
@@ -126,10 +127,8 @@ public class CheckoutActivity extends AppCompatActivity {
             }
         }
 
-        Toast.makeText(this, "Payment Successful! 🎉", Toast.LENGTH_LONG).show();
-        try {
-            dbHelper.clearCart();
-        } catch (Exception ignored) { }
-        finish();
+        // ✅ Instead of finishing here, open LocationSelectActivity
+        Intent intent = new Intent(CheckoutActivity.this, MapFragment.class);
+        startActivity(intent);
     }
 }

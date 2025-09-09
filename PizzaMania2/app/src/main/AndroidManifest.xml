@@ -52,6 +52,9 @@
 
         <activity android:name=".CheckoutActivity" />
 
+        <activity android:name=".MapFragment" android:exported="false"/>
+
+
 
 
     </application>
