@@ -29,6 +29,7 @@ color white_40
 color white_60
 color white_80
 color white_90
+drawable circle_white
 drawable edittext_bg
 drawable et_border
 drawable gradient_background
@@ -75,11 +76,12 @@ font poppins_semibolditalic
 font poppins_thin
 font poppins_thinitalic
 id action_cart
+id autocomplete_fragment
 id bottom_navigation
 id btnAddToCart
 id btnChangePassword
 id btnCheckout
-id btnConfirmPayment
+id btnConfirm
 id btnDecrease
 id btnDelete
 id btnDirections
@@ -113,7 +115,7 @@ id layoutCardDetails
 id llCardDetails
 id llLoginLink
 id map
-id mapFragment
+id map_container
 id nav_account
 id nav_home
 id nav_map
@@ -123,6 +125,7 @@ id rbCOD
 id rbCard
 id rbOnline
 id rgPaymentMethod
+id root
 id rvCart
 id rvRecommended
 id searchView
@@ -183,6 +186,7 @@ string gcm_defaultSenderId
 string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
+string google_maps_key
 string google_storage_bucket
 string login
 string login_success

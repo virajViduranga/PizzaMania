@@ -32,7 +32,6 @@ public class CheckoutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checkout);
 
-        // Initialize views
         rgPayment = findViewById(R.id.rgPaymentMethod);
         rbCOD = findViewById(R.id.rbCOD);
         rbOnline = findViewById(R.id.rbOnline);
@@ -51,23 +50,20 @@ public class CheckoutActivity extends AppCompatActivity {
 
         dbHelper = new CartDatabaseHelper(this);
 
-        // Click cards to select payment method
+        // Click listeners for payment methods
         cardCOD.setOnClickListener(v -> rgPayment.check(R.id.rbCOD));
         cardOnline.setOnClickListener(v -> rgPayment.check(R.id.rbOnline));
         cardCardPayment.setOnClickListener(v -> rgPayment.check(R.id.rbCard));
 
-        // Also handle clicks directly on radio buttons
         rbCOD.setOnClickListener(v -> rgPayment.check(R.id.rbCOD));
         rbOnline.setOnClickListener(v -> rgPayment.check(R.id.rbOnline));
         rbCard.setOnClickListener(v -> rgPayment.check(R.id.rbCard));
 
-        // Show card details if "Card Payment" selected
         rgPayment.setOnCheckedChangeListener((group, checkedId) -> {
             boolean showCardDetails = checkedId == R.id.rbCard;
             llCardDetails.setVisibility(showCardDetails ? View.VISIBLE : View.GONE);
 
-            // Highlight the selected MaterialCardView
-            int highlightColor = Color.parseColor("#FF5722"); // Orange stroke
+            int highlightColor = Color.parseColor("#FF5722");
             setCardHighlight(cardCOD, checkedId == R.id.rbCOD, highlightColor);
             setCardHighlight(cardOnline, checkedId == R.id.rbOnline, highlightColor);
             setCardHighlight(cardCardPayment, checkedId == R.id.rbCard, highlightColor);
@@ -99,7 +95,6 @@ public class CheckoutActivity extends AppCompatActivity {
             return;
         }
 
-        // If Card Payment selected → validate details
         if (checkedId == R.id.rbCard) {
             String name = etCardName.getText().toString().trim();
             String card = etCardNumber.getText().toString().trim().replaceAll("\\s+", "");
@@ -127,8 +122,8 @@ public class CheckoutActivity extends AppCompatActivity {
             }
         }
 
-        // ✅ Instead of finishing here, open LocationSelectActivity
-        Intent intent = new Intent(CheckoutActivity.this, MapFragment.class);
+        // ✅ Now open map screen
+        Intent intent = new Intent(this, LocationSelectActivity.class);
         startActivity(intent);
     }
 }

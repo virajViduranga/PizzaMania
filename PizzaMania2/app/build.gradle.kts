@@ -60,4 +60,7 @@ dependencies {
     // ✅ Glide (for pizza images)
     implementation("com.github.bumptech.glide:glide:4.16.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
+
+    // Google Places SDK (Autocomplete)
+    implementation("com.google.android.libraries.places:places:3.4.0")
 }

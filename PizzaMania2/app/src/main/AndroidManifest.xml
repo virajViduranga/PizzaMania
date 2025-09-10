@@ -20,7 +20,7 @@
         <!-- 🔹 Google Maps API Key -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyC8-jtVYQXofkvg7Hhuqn9jY-BF4xT5WpY" />
+            android:value="AIzaSyCNlm6rJP3L26eBOH_agJm7dRiB0W0KGeM" />
 
         <!-- 🔹 Main Activity -->
         <activity
@@ -52,7 +52,11 @@
 
         <activity android:name=".CheckoutActivity" />
 
-        <activity android:name=".MapFragment" android:exported="false"/>
+        <!-- 🔹 Home Fragment
+        <activity android:name=".MapFragment" android:exported="false"/> -->
+
+        <activity android:name=".LocationSelectActivity" />
+
 
 
 

@@ -5,6 +5,11 @@
       <config />
     </shared>
     <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/circle_white.xml">
+        <config>
+          <theme>@style/Theme.PizzaMania</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/edittext_bg.xml">
         <config>
           <theme>@style/Theme.PizzaMania</theme>
@@ -176,6 +181,11 @@
           <theme>@style/Theme.PizzaMania</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation.xml">
+        <config>
+          <theme>@style/Theme.PizzaMania</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml">
         <config>
           <theme>@style/Theme.PizzaMania</theme>
@@ -196,7 +206,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\ASUS4\.android\avd\Pixel_6a.avd)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=RF8R50TWEMT)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -205,10 +215,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="valueResourceFile" />
+        <option value="resourceFile" />
         <option value="Class" />
         <option value="layoutResourceFile" />
-        <option value="resourceFile" />
+        <option value="valueResourceFile" />
       </list>
     </option>
   </component>
@@ -338,12 +348,12 @@
       <map>
         <entry key="com.kosala.pizza_mania">
           <value>
-            <CheckInfo lastCheckTimestamp="1757399049611" />
+            <CheckInfo lastCheckTimestamp="1757495914161" />
           </value>
         </entry>
         <entry key="com.kosala.pizza_mania.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1757399049612" />
+            <CheckInfo lastCheckTimestamp="1757495914168" />
           </value>
         </entry>
       </map>
