@@ -36,11 +36,11 @@ com.kosala.pizza_mania.app-lifecycle-runtime-2.6.2-34 C:\Users\ASUS4\.gradle\cac
 com.kosala.pizza_mania.app-lifecycle-livedata-core-2.6.2-35 C:\Users\ASUS4\.gradle\caches\8.13\transforms\f882b6be483ade016d345607074bea18\transformed\lifecycle-livedata-core-2.6.2\res
 com.kosala.pizza_mania.app-credentials-1.2.0-rc01-36 C:\Users\ASUS4\.gradle\caches\8.13\transforms\fa678785968b5b93f12aa1e62204c609\transformed\credentials-1.2.0-rc01\res
 com.kosala.pizza_mania.app-constraintlayout-2.2.1-37 C:\Users\ASUS4\.gradle\caches\8.13\transforms\fb38dbbfb3294253991d3d0258f1ff96\transformed\constraintlayout-2.2.1\res
-com.kosala.pizza_mania.app-pngs-38 D:\NIBM\HNDSE\MAD\PizzaMania2\app\build\generated\res\pngs\debug
-com.kosala.pizza_mania.app-res-39 D:\NIBM\HNDSE\MAD\PizzaMania2\app\build\generated\res\processDebugGoogleServices
-com.kosala.pizza_mania.app-resValues-40 D:\NIBM\HNDSE\MAD\PizzaMania2\app\build\generated\res\resValues\debug
-com.kosala.pizza_mania.app-packageDebugResources-41 D:\NIBM\HNDSE\MAD\PizzaMania2\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.kosala.pizza_mania.app-packageDebugResources-42 D:\NIBM\HNDSE\MAD\PizzaMania2\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.kosala.pizza_mania.app-debug-43 D:\NIBM\HNDSE\MAD\PizzaMania2\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.kosala.pizza_mania.app-debug-44 D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\debug\res
-com.kosala.pizza_mania.app-main-45 D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\res
+com.kosala.pizza_mania.app-pngs-38 D:\Local Repository\PizzaMania\PizzaMania2\app\build\generated\res\pngs\debug
+com.kosala.pizza_mania.app-res-39 D:\Local Repository\PizzaMania\PizzaMania2\app\build\generated\res\processDebugGoogleServices
+com.kosala.pizza_mania.app-resValues-40 D:\Local Repository\PizzaMania\PizzaMania2\app\build\generated\res\resValues\debug
+com.kosala.pizza_mania.app-packageDebugResources-41 D:\Local Repository\PizzaMania\PizzaMania2\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.kosala.pizza_mania.app-packageDebugResources-42 D:\Local Repository\PizzaMania\PizzaMania2\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.kosala.pizza_mania.app-debug-43 D:\Local Repository\PizzaMania\PizzaMania2\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.kosala.pizza_mania.app-debug-44 D:\Local Repository\PizzaMania\PizzaMania2\app\src\debug\res
+com.kosala.pizza_mania.app-main-45 D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\res

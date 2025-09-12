@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-66:12
-INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-66:12
-INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-66:12
-INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-66:12
+ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:2:1-66:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\8a3d23e371eaddcc1dbdb2a493660723\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\ASUS4\.gradle\caches\8.13\transforms\fb38dbbfb3294253991d3d0258f1ff96\transformed\constraintlayout-2.2.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.libraries.places:places:3.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\c538736e9f43a6d91e1d125c2be6a02b\transformed\places-3.4.0\AndroidManifest.xml:2:1-24:12
@@ -81,17 +81,17 @@ MERGED from [io.grpc:grpc-android:1.57.2] C:\Users\ASUS4\.gradle\caches\8.13\tra
 MERGED from [com.android.volley:volley:1.2.1] C:\Users\ASUS4\.gradle\caches\8.13\transforms\37dac12a727d900c5c0d254dbc7b0b82\transformed\volley-1.2.1\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\244351e3b47d829962184c599e98da75\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 	package
-		INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:6:5-67
+ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:6:5-67
 MERGED from [com.google.android.libraries.places:places:3.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\c538736e9f43a6d91e1d125c2be6a02b\transformed\places-3.4.0\AndroidManifest.xml:12:5-67
 MERGED from [com.google.android.libraries.places:places:3.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\c538736e9f43a6d91e1d125c2be6a02b\transformed\places-3.4.0\AndroidManifest.xml:12:5-67
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\138e38a2416f037642f0b18d2c2bd010\transformed\play-services-maps-18.2.0\AndroidManifest.xml:24:5-67
@@ -105,22 +105,22 @@ MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\ASUS4\.grad
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\3abcba513b41f0c59e09fc4c215ae6ed\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\3abcba513b41f0c59e09fc4c215ae6ed\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:7:5-79
+ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:7:5-79
 MERGED from [com.google.android.libraries.places:places:3.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\c538736e9f43a6d91e1d125c2be6a02b\transformed\places-3.4.0\AndroidManifest.xml:10:5-79
 MERGED from [com.google.android.libraries.places:places:3.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\c538736e9f43a6d91e1d125c2be6a02b\transformed\places-3.4.0\AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:7:22-76
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:7:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:8:5-81
+ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:8:5-81
 MERGED from [com.google.android.libraries.places:places:3.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\c538736e9f43a6d91e1d125c2be6a02b\transformed\places-3.4.0\AndroidManifest.xml:9:5-81
 MERGED from [com.google.android.libraries.places:places:3.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\c538736e9f43a6d91e1d125c2be6a02b\transformed\places-3.4.0\AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:8:22-78
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:8:22-78
 application
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:10:5-64:19
-INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:10:5-64:19
+ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:10:5-64:19
+INJECTED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:10:5-64:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\8a3d23e371eaddcc1dbdb2a493660723\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\8a3d23e371eaddcc1dbdb2a493660723\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\ASUS4\.gradle\caches\8.13\transforms\fb38dbbfb3294253991d3d0258f1ff96\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
@@ -174,81 +174,81 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ASUS4\.gradle\cach
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ASUS4\.gradle\caches\8.13\transforms\efa3b07c5b64d63dcb792d1cd24fc6cc\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ASUS4\.gradle\caches\8.13\transforms\efa3b07c5b64d63dcb792d1cd24fc6cc\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 	android:extractNativeLibs
-		INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\7b403d91b087ccca5aac6866a766219a\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:17:9-35
 	android:label
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:15:9-41
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:15:9-41
 	android:fullBackupContent
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:13:9-54
 	android:roundIcon
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:16:9-54
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:16:9-54
 	android:icon
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:14:9-43
 	android:allowBackup
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:18:9-48
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:18:9-48
 	android:dataExtractionRules
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:12:9-65
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:12:9-65
 meta-data#com.google.android.geo.API_KEY
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:21:9-23:71
+ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:21:9-23:71
 	android:value
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:23:13-68
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:23:13-68
 	android:name
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:22:13-58
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:22:13-58
 activity#com.kosala.pizza_mania.MainActivity
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:26:9-28:39
+ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:26:9-28:39
 	android:exported
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:28:13-36
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:28:13-36
 	android:name
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:27:13-41
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:27:13-41
 activity#com.kosala.pizza_mania.SignupActivity
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:31:9-34:48
+ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:31:9-34:48
 	android:exported
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:33:13-36
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:33:13-36
 	android:theme
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:34:13-45
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:34:13-45
 	android:name
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:32:13-43
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:32:13-43
 activity#com.kosala.pizza_mania.LoginActivity
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:37:9-45:20
+ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:37:9-45:20
 	android:exported
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:40:13-36
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:40:13-36
 	android:theme
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:39:13-45
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:39:13-45
 	android:name
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:38:13-42
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:38:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:41:13-44:29
+ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:41:13-44:29
 action#android.intent.action.MAIN
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:42:17-69
+ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:42:17-69
 	android:name
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:42:25-66
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:42:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:43:17-77
+ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:43:17-77
 	android:name
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:43:27-74
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:43:27-74
 activity#com.kosala.pizza_mania.CartActivity
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:50:9-74
+ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:50:9-74
 	android:exported
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:50:48-72
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:50:48-72
 	android:name
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:50:19-47
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:50:19-47
 activity#com.kosala.pizza_mania.CheckoutActivity
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:53:9-54
+ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:53:9-54
 	android:name
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:53:19-51
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:53:19-51
 activity#com.kosala.pizza_mania.LocationSelectActivity
-ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:58:9-60
+ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:58:9-60
 	android:name
-		ADDED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:58:19-57
+		ADDED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:58:19-57
 uses-sdk
-INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml
-INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml
+INJECTED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml
+INJECTED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\8a3d23e371eaddcc1dbdb2a493660723\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\8a3d23e371eaddcc1dbdb2a493660723\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\ASUS4\.gradle\caches\8.13\transforms\fb38dbbfb3294253991d3d0258f1ff96\transformed\constraintlayout-2.2.1\AndroidManifest.xml:5:5-44
@@ -404,9 +404,9 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\ASU
 	tools:overrideLibrary
 		ADDED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\af6f47e81fd042022b049b62c865d28f\transformed\firebase-auth-23.0.0\AndroidManifest.xml:23:9-148
 	android:targetSdkVersion
-		INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from [com.google.android.libraries.places:places:3.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\c538736e9f43a6d91e1d125c2be6a02b\transformed\places-3.4.0\AndroidManifest.xml:11:5-76
 	android:name

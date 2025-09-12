@@ -10,14 +10,14 @@
 10
 11    <!-- 🔹 Permissions -->
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:6:5-67
-12-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:6:22-64
+12-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:6:5-67
+12-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:6:22-64
 13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-13-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:7:5-79
-13-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:7:22-76
+13-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:7:5-79
+13-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:7:22-76
 14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-14-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:8:5-81
-14-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:8:22-78
+14-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:8:5-81
+14-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:8:22-78
 15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Include required permissions for Google Maps API to run. -->
 15-->[com.google.android.libraries.places:places:3.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\c538736e9f43a6d91e1d125c2be6a02b\transformed\places-3.4.0\AndroidManifest.xml:11:5-76
 15-->[com.google.android.libraries.places:places:3.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\c538736e9f43a6d91e1d125c2be6a02b\transformed\places-3.4.0\AndroidManifest.xml:11:22-73
@@ -57,87 +57,87 @@
 34-->[androidx.core:core:1.13.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\7b403d91b087ccca5aac6866a766219a\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
 35
 36    <application
-36-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:10:5-64:19
+36-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:10:5-64:19
 37        android:allowBackup="true"
-37-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:11:9-35
+37-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:11:9-35
 38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 38-->[androidx.core:core:1.13.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\7b403d91b087ccca5aac6866a766219a\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 39        android:dataExtractionRules="@xml/data_extraction_rules"
-39-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:12:9-65
+39-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:12:9-65
 40        android:debuggable="true"
 41        android:extractNativeLibs="false"
 42        android:fullBackupContent="@xml/backup_rules"
-42-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:13:9-54
+42-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:13:9-54
 43        android:icon="@mipmap/ic_launcher"
-43-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:14:9-43
+43-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:14:9-43
 44        android:label="@string/app_name"
-44-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:15:9-41
+44-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:15:9-41
 45        android:roundIcon="@mipmap/ic_launcher_round"
-45-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:16:9-54
+45-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:16:9-54
 46        android:supportsRtl="true"
-46-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:17:9-35
+46-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:17:9-35
 47        android:testOnly="true"
 48        android:theme="@style/Theme.PizzaMania" >
-48-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:18:9-48
+48-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:18:9-48
 49
 50        <!-- 🔹 Google Maps API Key -->
 51        <meta-data
-51-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:21:9-23:71
+51-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:21:9-23:71
 52            android:name="com.google.android.geo.API_KEY"
-52-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:22:13-58
+52-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:22:13-58
 53            android:value="AIzaSyCNlm6rJP3L26eBOH_agJm7dRiB0W0KGeM" />
-53-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:23:13-68
+53-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:23:13-68
 54
 55        <!-- 🔹 Main Activity -->
 56        <activity
-56-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:26:9-28:39
+56-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:26:9-28:39
 57            android:name="com.kosala.pizza_mania.MainActivity"
-57-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:27:13-41
+57-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:27:13-41
 58            android:exported="true" />
-58-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:28:13-36
+58-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:28:13-36
 59
 60        <!-- 🔹 Signup Activity -->
 61        <activity
-61-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:31:9-34:48
+61-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:31:9-34:48
 62            android:name="com.kosala.pizza_mania.SignupActivity"
-62-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:32:13-43
+62-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:32:13-43
 63            android:exported="true"
-63-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:33:13-36
+63-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:33:13-36
 64            android:theme="@style/AuthTheme" />
-64-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:34:13-45
+64-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:34:13-45
 65
 66        <!-- 🔹 Login Activity (Launcher) -->
 67        <activity
-67-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:37:9-45:20
+67-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:37:9-45:20
 68            android:name="com.kosala.pizza_mania.LoginActivity"
-68-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:38:13-42
+68-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:38:13-42
 69            android:exported="true"
-69-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:40:13-36
+69-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:40:13-36
 70            android:theme="@style/AuthTheme" >
-70-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:39:13-45
+70-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:39:13-45
 71            <intent-filter>
-71-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:41:13-44:29
+71-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:41:13-44:29
 72                <action android:name="android.intent.action.MAIN" />
-72-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:42:17-69
-72-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:42:25-66
+72-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:42:17-69
+72-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:42:25-66
 73
 74                <category android:name="android.intent.category.LAUNCHER" />
-74-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:43:17-77
-74-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:43:27-74
+74-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:43:17-77
+74-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:43:27-74
 75            </intent-filter>
 76        </activity>
 77
 78        <!-- 🔹 Cart Activity -->
 79
 80        <activity
-80-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:50:9-74
+80-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:50:9-74
 81            android:name="com.kosala.pizza_mania.CartActivity"
-81-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:50:19-47
+81-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:50:19-47
 82            android:exported="false" />
-82-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:50:48-72
+82-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:50:48-72
 83        <activity android:name="com.kosala.pizza_mania.CheckoutActivity" />
-83-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:53:9-54
-83-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:53:19-51
+83-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:53:9-54
+83-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:53:19-51
 84
 85        <!--
 86        🔹 Home Fragment
@@ -145,8 +145,8 @@
 88        -->
 89
 90        <activity android:name="com.kosala.pizza_mania.LocationSelectActivity" />
-90-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:58:9-60
-90-->D:\NIBM\HNDSE\MAD\PizzaMania2\app\src\main\AndroidManifest.xml:58:19-57
+90-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:58:9-60
+90-->D:\Local Repository\PizzaMania\PizzaMania2\app\src\main\AndroidManifest.xml:58:19-57
 91        <activity
 91-->[com.google.android.libraries.places:places:3.4.0] C:\Users\ASUS4\.gradle\caches\8.13\transforms\c538736e9f43a6d91e1d125c2be6a02b\transformed\places-3.4.0\AndroidManifest.xml:15:9-21:20
 92            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
