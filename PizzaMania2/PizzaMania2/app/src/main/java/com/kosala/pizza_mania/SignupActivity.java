@@ -9,11 +9,16 @@ import android.widget.Toast;
 
 import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class SignupActivity extends AppCompatActivity {
 
@@ -23,6 +28,7 @@ public class SignupActivity extends AppCompatActivity {
     private TextView btnGoToLogin;
     private ProgressBar progressBar;
     private FirebaseAuth mAuth;
+    private FirebaseFirestore db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +36,8 @@ public class SignupActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
 
         mAuth = FirebaseAuth.getInstance();
+        db = FirebaseFirestore.getInstance();
+
         initViews();
         setupClickListeners();
 
@@ -56,6 +64,7 @@ public class SignupActivity extends AppCompatActivity {
         btnSignup.setOnClickListener(v -> {
             if (validateInputs()) registerUser();
         });
+
         btnGoToLogin.setOnClickListener(v -> {
             startActivity(new Intent(SignupActivity.this, LoginActivity.class));
             finish();
@@ -103,17 +112,31 @@ public class SignupActivity extends AppCompatActivity {
                     showLoading(false);
                     if (task.isSuccessful()) {
                         FirebaseUser user = mAuth.getCurrentUser();
-                        if (user != null) sendVerificationEmail(user);
-
+                        if (user != null) {
+                            sendVerificationEmail(user);
+                            saveUserToFirestore(user.getUid(), email);
+                        }
                         Toast.makeText(this, "Account created successfully!", Toast.LENGTH_LONG).show();
                         startActivity(new Intent(SignupActivity.this, LoginActivity.class));
                         finish();
-                    } else handleRegistrationError(task.getException());
+                    } else {
+                        handleRegistrationError(task.getException());
+                    }
                 })
                 .addOnFailureListener(e -> {
                     showLoading(false);
                     Toast.makeText(this, "Network error. Please try again.", Toast.LENGTH_LONG).show();
                 });
+    }
+
+    private void saveUserToFirestore(String uid, String email) {
+        Map<String, Object> userData = new HashMap<>();
+        userData.put("email", email);
+        userData.put("role", "customer"); // Default role
+
+        db.collection("users")
+                .document(uid)
+                .set(userData);
     }
 
     private void handleRegistrationError(Exception exception) {
