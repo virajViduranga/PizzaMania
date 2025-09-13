@@ -52,17 +52,6 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCNlm6rJP3L26eBOH_agJm7dRiB0W0KGeM" />
 
-        <!-- 🔹 Main Activity -->
-        <activity
-            android:name="com.kosala.pizza_mania.MainActivity"
-            android:exported="true" />
-
-        <!-- 🔹 Signup Activity -->
-        <activity
-            android:name="com.kosala.pizza_mania.SignupActivity"
-            android:exported="true"
-            android:theme="@style/AuthTheme" />
-
         <!-- 🔹 Login Activity (Launcher) -->
         <activity
             android:name="com.kosala.pizza_mania.LoginActivity"
@@ -75,18 +64,39 @@
             </intent-filter>
         </activity>
 
-        <!-- 🔹 Cart Activity -->
+        <!-- 🔹 Signup Activity -->
+        <activity
+            android:name="com.kosala.pizza_mania.SignupActivity"
+            android:exported="true"
+            android:theme="@style/AuthTheme" />
 
+        <!-- 🔹 Main Activity (Customer Home) -->
+        <activity
+            android:name="com.kosala.pizza_mania.MainActivity"
+            android:exported="true" />
+
+        <!-- 🔹 Admin Dashboard -->
+        <activity
+            android:name="com.kosala.pizza_mania.AdminDashboardActivity"
+            android:exported="true" />
+        <activity android:name="com.kosala.pizza_mania.ManageUsersActivity" />
+        <activity android:name="com.kosala.pizza_mania.ManageMenuActivity" />
+        <activity android:name="com.kosala.pizza_mania.AddPizzaActivity" />
+
+        <!-- 🔹 Customer Dashboard -->
+        <activity
+            android:name="com.kosala.pizza_mania.CustomerDashboardActivity"
+            android:exported="true" />
+
+        <!-- 🔹 Cart Activity -->
         <activity
             android:name="com.kosala.pizza_mania.CartActivity"
             android:exported="false" />
+
+        <!-- 🔹 Checkout Activity -->
         <activity android:name="com.kosala.pizza_mania.CheckoutActivity" />
 
-        <!--
-        🔹 Home Fragment
-        <activity android:name=".MapFragment" android:exported="false"/>
-        -->
-
+        <!-- 🔹 Location Select Activity -->
         <activity android:name="com.kosala.pizza_mania.LocationSelectActivity" />
         <activity
             android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
@@ -148,6 +158,18 @@
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"

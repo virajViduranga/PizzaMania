@@ -22,17 +22,6 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCNlm6rJP3L26eBOH_agJm7dRiB0W0KGeM" />
 
-        <!-- 🔹 Main Activity -->
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" />
-
-        <!-- 🔹 Signup Activity -->
-        <activity
-            android:name=".SignupActivity"
-            android:exported="true"
-            android:theme="@style/AuthTheme" />
-
         <!-- 🔹 Login Activity (Launcher) -->
         <activity
             android:name=".LoginActivity"
@@ -44,22 +33,44 @@
             </intent-filter>
         </activity>
 
+        <!-- 🔹 Signup Activity -->
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true"
+            android:theme="@style/AuthTheme" />
+
+        <!-- 🔹 Main Activity (Customer Home) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <!-- 🔹 Admin Dashboard -->
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="true" />
+
+        <activity android:name=".ManageUsersActivity" />
+
+        <activity android:name=".ManageMenuActivity" />
+
+        <activity android:name=".AddPizzaActivity" />
+
+
+
+        <!-- 🔹 Customer Dashboard -->
+        <activity
+            android:name=".CustomerDashboardActivity"
+            android:exported="true" />
+
+
         <!-- 🔹 Cart Activity -->
-
-
         <activity android:name=".CartActivity" android:exported="false"/>
 
-
+        <!-- 🔹 Checkout Activity -->
         <activity android:name=".CheckoutActivity" />
 
-        <!-- 🔹 Home Fragment
-        <activity android:name=".MapFragment" android:exported="false"/> -->
-
+        <!-- 🔹 Location Select Activity -->
         <activity android:name=".LocationSelectActivity" />
-
-
-
-
 
     </application>
 

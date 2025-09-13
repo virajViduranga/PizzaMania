@@ -24,11 +24,23 @@ public class RecommendedMenuAdapter extends RecyclerView.Adapter<RecommendedMenu
     private final Context context;
     private final List<Pizza> pizzaList;
     private final CartDatabaseHelper dbHelper;
+    private OnItemClickListener listener;
+
+    public interface OnItemClickListener {
+        void onItemClick(Pizza pizza);
+    }
 
     public RecommendedMenuAdapter(Context context, List<Pizza> pizzaList) {
         this.context = context;
         this.pizzaList = pizzaList;
         this.dbHelper = new CartDatabaseHelper(context);
+    }
+
+    public RecommendedMenuAdapter(Context context, List<Pizza> pizzaList, OnItemClickListener listener) {
+        this.context = context;
+        this.pizzaList = pizzaList;
+        this.dbHelper = new CartDatabaseHelper(context);
+        this.listener = listener;
     }
 
     @NonNull
@@ -53,6 +65,27 @@ public class RecommendedMenuAdapter extends RecyclerView.Adapter<RecommendedMenu
         } else {
             holder.ivPizza.setImageResource(R.drawable.placeholder);
         }
+
+        // Add click listener for the entire item
+        holder.itemView.setOnClickListener(v -> {
+            if (listener != null) {
+                listener.onItemClick(pizza);
+            }
+        });
+
+        // Add visual feedback on touch
+        holder.itemView.setOnTouchListener((v, event) -> {
+            switch (event.getAction()) {
+                case android.view.MotionEvent.ACTION_DOWN:
+                    v.setAlpha(0.8f);
+                    break;
+                case android.view.MotionEvent.ACTION_UP:
+                case android.view.MotionEvent.ACTION_CANCEL:
+                    v.setAlpha(1.0f);
+                    break;
+            }
+            return false;
+        });
 
         // Increase/Decrease quantity
         holder.btnIncrease.setOnClickListener(v -> {

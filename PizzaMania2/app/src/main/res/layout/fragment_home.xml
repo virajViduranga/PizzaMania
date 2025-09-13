@@ -47,7 +47,7 @@
         android:layout_below="@id/toolbar"
         android:layout_margin="12dp"
         android:iconifiedByDefault="false"
-        android:queryHint="Search pizzas..."
+        android:queryHint="Search foods..."
         android:background="@drawable/search_rounded"
         android:padding="8dp"
         android:elevation="4dp" />
@@ -58,11 +58,48 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/searchView"
-        android:layout_marginTop="12dp"
-        android:layout_marginStart="12dp"
-        android:text="Nearest branch will appear here"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:text="📍 Finding nearest branch..."
+        android:textColor="#666666"
+        android:textSize="14sp"/>
+
+    <!-- Categories Section -->
+    <TextView
+        android:id="@+id/tvCategoriesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNearest"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Categories"
         android:textColor="#000000"
-        android:textSize="16sp"/>
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Horizontal Categories RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCategoriesLabel"
+        android:layout_marginTop="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:clipToPadding="false" />
+
+    <!-- Menu Items Section -->
+    <TextView
+        android:id="@+id/tvMenuLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rvCategories"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:text="Our Menu"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <!-- ProgressBar -->
     <ProgressBar
@@ -73,11 +110,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <!-- RecyclerView -->
+    <!-- Menu Items RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvRecommended"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/tvNearest"
-        android:layout_marginTop="12dp"/>
+        android:layout_below="@id/tvMenuLabel"
+        android:layout_marginTop="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:clipToPadding="false" />
+
 </RelativeLayout>

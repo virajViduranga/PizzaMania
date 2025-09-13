@@ -2,8 +2,11 @@ package com.kosala.pizza_mania;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.location.Location;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,6 +15,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,24 +36,30 @@ import com.google.android.gms.location.LocationServices;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.kosala.pizza_mania.adapters.RecommendedMenuAdapter;
+import com.kosala.pizza_mania.adapters.CategoryAdapter;
 import com.kosala.pizza_mania.models.Branch;
 import com.kosala.pizza_mania.models.Pizza;
+import com.kosala.pizza_mania.models.Category;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class HomeFragment extends Fragment {
 
     private static final int LOCATION_PERMISSION_CODE = 1001;
 
-    private RecyclerView rvRecommended;
+    private RecyclerView rvRecommended, rvCategories;
     private RecommendedMenuAdapter adapter;
-    private List<Pizza> pizzaList;
+    private CategoryAdapter categoryAdapter;
+    private List<Pizza> pizzaList, filteredList;
+    private List<Category> categoryList;
     private FirebaseFirestore db;
     private ProgressBar progressBar;
     private TextView tvNearest;
     private FusedLocationProviderClient fusedLocationProviderClient;
     private SearchView searchView;
+    private String selectedCategory = "Pizza";
 
     public HomeFragment() { }
 
@@ -57,9 +69,9 @@ public class HomeFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        setHasOptionsMenu(true); // enable menu in toolbar
+        setHasOptionsMenu(true);
 
-        // Setup Toolbar (unchanged)
+        // Setup Toolbar
         Toolbar toolbar = view.findViewById(R.id.toolbar);
         if (getActivity() instanceof AppCompatActivity) {
             AppCompatActivity activity = (AppCompatActivity) getActivity();
@@ -69,28 +81,113 @@ public class HomeFragment extends Fragment {
             }
         }
 
+        initializeViews(view);
+        setupCategories();
+        setupRecyclerViews();
+        setupSearchBar();
+
+        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(requireActivity());
+        requestLocationPermission();
+
+        return view;
+    }
+
+    private void initializeViews(View view) {
         rvRecommended = view.findViewById(R.id.rvRecommended);
+        rvCategories = view.findViewById(R.id.rvCategories);
         progressBar = view.findViewById(R.id.progressBar);
         tvNearest = view.findViewById(R.id.tvNearest);
         searchView = view.findViewById(R.id.searchView);
 
         pizzaList = new ArrayList<>();
+        filteredList = new ArrayList<>();
+        categoryList = new ArrayList<>();
         db = FirebaseFirestore.getInstance();
-        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(requireActivity());
+    }
 
+    private void setupCategories() {
+        categoryList.clear();
+        categoryList.add(new Category("Pizza", R.drawable.pizzaq, true));
+        categoryList.add(new Category("Burgers", R.drawable.buger, false));
+        categoryList.add(new Category("Beverages", R.drawable.bevarage, false));
+        categoryList.add(new Category("Desserts", R.drawable.desert, false));
+        categoryList.add(new Category("Sides", R.drawable.serving, false));
+    }
+
+    private void setupRecyclerViews() {
+        // Categories RecyclerView (Horizontal)
+        rvCategories.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        categoryAdapter = new CategoryAdapter(getContext(), categoryList, this::onCategoryClick);
+        rvCategories.setAdapter(categoryAdapter);
+
+        // Menu RecyclerView (Vertical)
         rvRecommended.setLayoutManager(new LinearLayoutManager(getContext()));
-        adapter = new RecommendedMenuAdapter(getContext(), pizzaList);
+        adapter = new RecommendedMenuAdapter(getContext(), filteredList, this::onItemClick);
         rvRecommended.setAdapter(adapter);
+    }
 
-        requestLocationPermission();
+    private void onCategoryClick(Category category, int position) {
+        // Update selected category
+        for (Category cat : categoryList) {
+            cat.setSelected(false);
+        }
+        category.setSelected(true);
+        selectedCategory = category.getName();
+        categoryAdapter.notifyDataSetChanged();
 
-        setupSearchBar(); // ✅ Only this changes the SearchView colors
+        // Filter items based on category
+        if (selectedCategory.equals("Pizza")) {
+            filterItemsByCategory();
+        } else {
+            // Show "Currently not available" for other categories
+            filteredList.clear();
+            adapter.notifyDataSetChanged();
+            Toast.makeText(getContext(), selectedCategory + " - Currently not available", Toast.LENGTH_SHORT).show();
+        }
+    }
 
-        return view;
+    private void onItemClick(Pizza pizza) {
+        showItemDetailsDialog(pizza);
+    }
+
+    private void showItemDetailsDialog(Pizza pizza) {
+        Dialog dialog = new Dialog(requireContext());
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.dialog_item_details);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+
+        ImageView ivItemImage = dialog.findViewById(R.id.ivItemImage);
+        TextView tvItemName = dialog.findViewById(R.id.tvItemName);
+        TextView tvItemDescription = dialog.findViewById(R.id.tvItemDescription);
+        TextView tvItemPrice = dialog.findViewById(R.id.tvItemPrice);
+        Button btnClose = dialog.findViewById(R.id.btnClose);
+        Button btnAddToCart = dialog.findViewById(R.id.btnAddToCart);
+
+        // Set data (with placeholder for missing data)
+        tvItemName.setText(pizza.getName() != null ? pizza.getName() : "Delicious Pizza");
+        tvItemDescription.setText("A mouth-watering pizza with fresh ingredients and perfect blend of flavors. Available in regular and large sizes.");
+
+        if (pizza.getPrice() > 0) {
+            tvItemPrice.setText("Rs. " + pizza.getPrice());
+        } else {
+            tvItemPrice.setText("Rs. 750 - Rs. 1200");
+        }
+
+        // Set placeholder image (you can update this when you have actual images)
+        ivItemImage.setImageResource(R.drawable.pizzaq);
+
+        btnClose.setOnClickListener(v -> dialog.dismiss());
+
+        btnAddToCart.setOnClickListener(v -> {
+            Toast.makeText(getContext(), pizza.getName() + " added to cart!", Toast.LENGTH_SHORT).show();
+            dialog.dismiss();
+        });
+
+        dialog.show();
     }
 
     private void setupSearchBar() {
-        // ✅ Typed letters black & hint gray
         int id = searchView.getContext().getResources()
                 .getIdentifier("android:id/search_src_text", null, null);
         TextView searchText = searchView.findViewById(id);
@@ -99,7 +196,6 @@ public class HomeFragment extends Fragment {
             searchText.setHintTextColor(getResources().getColor(android.R.color.darker_gray));
         }
 
-        // ✅ Magnifier icon black
         int searchMagId = searchView.getContext().getResources()
                 .getIdentifier("android:id/search_mag_icon", null, null);
         View searchIcon = searchView.findViewById(searchMagId);
@@ -108,7 +204,6 @@ public class HomeFragment extends Fragment {
                     getResources().getColor(android.R.color.black));
         }
 
-        // ✅ Close (x) icon black
         int closeBtnId = searchView.getContext().getResources()
                 .getIdentifier("android:id/search_close_btn", null, null);
         View closeBtn = searchView.findViewById(closeBtnId);
@@ -119,7 +214,6 @@ public class HomeFragment extends Fragment {
 
         searchView.setIconifiedByDefault(false);
 
-        // Add filtering
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
@@ -142,8 +236,17 @@ public class HomeFragment extends Fragment {
                 filtered.add(pizza);
             }
         }
-        adapter = new RecommendedMenuAdapter(getContext(), filtered);
-        rvRecommended.setAdapter(adapter);
+        filteredList.clear();
+        filteredList.addAll(filtered);
+        adapter.notifyDataSetChanged();
+    }
+
+    private void filterItemsByCategory() {
+        filteredList.clear();
+        if (selectedCategory.equals("Pizza")) {
+            filteredList.addAll(pizzaList);
+        }
+        adapter.notifyDataSetChanged();
     }
 
     private void requestLocationPermission() {
@@ -215,7 +318,7 @@ public class HomeFragment extends Fragment {
                     }
 
                     if (nearestBranch != null) {
-                        tvNearest.setText("Nearest branch: " + nearestBranch.getName());
+                        tvNearest.setText("📍 " + nearestBranch.getName());
                         loadMenu(nearestBranch.getId());
                     } else {
                         tvNearest.setText("No branches found");
@@ -237,13 +340,16 @@ public class HomeFragment extends Fragment {
                 .addOnCompleteListener(task -> {
                     progressBar.setVisibility(View.GONE);
                     pizzaList.clear();
+                    filteredList.clear();
 
                     if (task.isSuccessful() && task.getResult() != null) {
                         for (DocumentSnapshot doc : task.getResult()) {
                             Pizza pizza = doc.toObject(Pizza.class);
-                            if (pizza != null) pizzaList.add(pizza);
+                            if (pizza != null) {
+                                pizzaList.add(pizza);
+                            }
                         }
-                        adapter.notifyDataSetChanged();
+                        filterItemsByCategory();
                     } else {
                         Toast.makeText(getContext(), "No menu found", Toast.LENGTH_SHORT).show();
                     }

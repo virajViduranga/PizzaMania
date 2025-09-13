@@ -20,7 +20,7 @@ public class SettingsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_settings, container, false);
 
         Button btnChangePassword = view.findViewById(R.id.btnChangePassword);
-        Button btnNotifications = view.findViewById(R.id.btnNotifications);
+//        Button btnNotifications = view.findViewById(R.id.btnNotifications);
         Button btnLogout = view.findViewById(R.id.btnLogout);
 
         // Change Password
@@ -46,10 +46,10 @@ public class SettingsFragment extends Fragment {
             }
         });
 
-        // Notifications (placeholder)
-        btnNotifications.setOnClickListener(v ->
-                Toast.makeText(getActivity(), "Notification settings coming soon!", Toast.LENGTH_SHORT).show()
-        );
+//        // Notifications (placeholder)
+//        btnNotifications.setOnClickListener(v ->
+//                Toast.makeText(getActivity(), "Notification settings coming soon!", Toast.LENGTH_SHORT).show()
+//        );
 
         // Logout
         btnLogout.setOnClickListener(v -> {

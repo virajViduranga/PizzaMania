@@ -28,7 +28,6 @@
         android:textSize="28sp"
         android:textStyle="bold"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/poppins_bold"
         app:layout_constraintTop_toBottomOf="@id/ivLogo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -41,7 +40,6 @@
         android:textColor="@color/white_80"
         android:textSize="16sp"
         android:layout_marginTop="8dp"
-        android:fontFamily="@font/poppins_regular"
         app:layout_constraintTop_toBottomOf="@id/tvAppName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -111,7 +109,6 @@
                 android:backgroundTint="@color/primary_color"
                 android:text="Create Account"
                 android:textColor="@color/white"
-                android:fontFamily="@font/poppins_semibold"
                 android:textSize="16sp"
                 app:cornerRadius="12dp"
                 app:elevation="4dp"/>
@@ -146,7 +143,6 @@
             android:layout_height="wrap_content"
             android:text="Already have an account? "
             android:textColor="@color/white_80"
-            android:fontFamily="@font/poppins_regular"
             android:textSize="14sp"/>
 
         <TextView
@@ -155,12 +151,12 @@
             android:layout_height="wrap_content"
             android:text="Login"
             android:textColor="@color/accent_color"
-            android:fontFamily="@font/poppins_semibold"
+            android:textSize="14sp"
+            android:textStyle="bold"
             android:clickable="true"
             android:focusable="true"
             android:padding="4dp"
-            android:background="?android:attr/selectableItemBackgroundBorderless"
-            android:textSize="14sp"/>
+            android:background="?android:attr/selectableItemBackgroundBorderless"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
