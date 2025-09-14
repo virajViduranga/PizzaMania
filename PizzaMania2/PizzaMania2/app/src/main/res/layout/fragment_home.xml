@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
-    <!-- Toolbar with Logo + Title -->
+    <!-- Toolbar -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -25,8 +26,8 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:src="@drawable/pizza_logo"
-                android:contentDescription="App Logo"
-                android:layout_marginEnd="8dp" />
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Logo" />
 
             <TextView
                 android:id="@+id/tvTitle"
@@ -39,7 +40,7 @@
         </LinearLayout>
     </androidx.appcompat.widget.Toolbar>
 
-    <!-- Search Bar below Toolbar -->
+    <!-- Search -->
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="match_parent"
@@ -58,26 +59,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/searchView"
-        android:layout_marginTop="8dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
         android:text="📍 Finding nearest branch..."
-        android:textColor="#666666"
-        android:textSize="14sp"/>
+        android:textSize="14sp"
+        android:textColor="#666" />
 
-    <!-- Categories Section -->
+    <!-- Categories -->
     <TextView
         android:id="@+id/tvCategoriesLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvNearest"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
         android:text="Categories"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="18sp" />
 
-    <!-- Horizontal Categories RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvCategories"
         android:layout_width="match_parent"
@@ -88,20 +88,33 @@
         android:paddingEnd="12dp"
         android:clipToPadding="false" />
 
-    <!-- Menu Items Section -->
+    <!-- Menu -->
     <TextView
         android:id="@+id/tvMenuLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/rvCategories"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="18dp"
         android:layout_marginStart="16dp"
         android:text="Our Menu"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="18sp" />
 
-    <!-- ProgressBar -->
+    <!-- Horizontal menu list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRecommended"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMenuLabel"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:scrollbars="horizontal" />
+
+
+    <!-- Loader -->
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleLarge"
@@ -109,16 +122,5 @@
         android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-
-    <!-- Menu Items RecyclerView -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvRecommended"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/tvMenuLabel"
-        android:layout_marginTop="8dp"
-        android:paddingStart="12dp"
-        android:paddingEnd="12dp"
-        android:clipToPadding="false" />
 
 </RelativeLayout>

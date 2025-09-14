@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
 import com.kosala.pizza_mania.models.Pizza;
 
 import java.util.ArrayList;
@@ -43,9 +44,7 @@ public class CartDatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    /**
-     * Add pizza to cart. If item exists, increase quantity.
-     */
+    /** Add pizza to cart. If exists, increase quantity */
     public void addToCart(Pizza pizza) {
         SQLiteDatabase db = getWritableDatabase();
         try (Cursor c = db.query(TABLE_CART, new String[]{COL_ID, COL_QTY},
@@ -56,6 +55,7 @@ public class CartDatabaseHelper extends SQLiteOpenHelper {
                 int existingQty = c.getInt(c.getColumnIndexOrThrow(COL_QTY));
                 int addQty = Math.max(1, pizza.getQuantity());
                 int newQty = existingQty + addQty;
+
                 ContentValues cv = new ContentValues();
                 cv.put(COL_QTY, newQty);
                 db.update(TABLE_CART, cv, COL_NAME + "=?", new String[]{pizza.getName()});
@@ -72,6 +72,7 @@ public class CartDatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    /** Get all items in the cart */
     public List<Pizza> getCartItems() {
         List<Pizza> list = new ArrayList<>();
         SQLiteDatabase db = getReadableDatabase();
@@ -82,7 +83,8 @@ public class CartDatabaseHelper extends SQLiteOpenHelper {
                     double price = c.getDouble(c.getColumnIndexOrThrow(COL_PRICE));
                     String image = c.getString(c.getColumnIndexOrThrow(COL_IMAGE));
                     int qty = c.getInt(c.getColumnIndexOrThrow(COL_QTY));
-                    Pizza p = new Pizza(name, price, image);
+
+                    Pizza p = new Pizza(name, price, image); // ✅ Correct constructor
                     p.setQuantity(qty);
                     list.add(p);
                 }
@@ -93,6 +95,7 @@ public class CartDatabaseHelper extends SQLiteOpenHelper {
         return list;
     }
 
+    /** Update quantity for an item */
     public void updateQuantity(String name, int quantity) {
         SQLiteDatabase db = getWritableDatabase();
         try {
@@ -108,6 +111,7 @@ public class CartDatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    /** Remove an item from cart */
     public void removeItem(String name) {
         SQLiteDatabase db = getWritableDatabase();
         try {
@@ -117,6 +121,7 @@ public class CartDatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    /** Clear entire cart */
     public void clearCart() {
         SQLiteDatabase db = getWritableDatabase();
         try {
@@ -126,6 +131,7 @@ public class CartDatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    /** Calculate total price of cart */
     public double getTotal() {
         double total = 0.0;
         SQLiteDatabase db = getReadableDatabase();

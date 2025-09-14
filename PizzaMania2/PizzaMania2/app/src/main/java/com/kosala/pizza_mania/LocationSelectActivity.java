@@ -6,7 +6,6 @@ import android.content.pm.PackageManager;
 import android.location.Geocoder;
 import android.location.Address;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
@@ -17,22 +16,17 @@ import androidx.fragment.app.FragmentActivity;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
-
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-
 import com.google.android.libraries.places.api.Places;
 import com.google.android.libraries.places.api.model.Place;
-
 import com.google.android.libraries.places.widget.AutocompleteSupportFragment;
 import com.google.android.libraries.places.widget.listener.PlaceSelectionListener;
-
 import com.kosala.pizza_mania.utils.CartDatabaseHelper;
 
 import java.io.IOException;
@@ -52,6 +46,10 @@ public class LocationSelectActivity extends FragmentActivity implements OnMapRea
     private FusedLocationProviderClient fusedLocationClient;
     private CartDatabaseHelper dbHelper;
 
+    // Example branch location (TODO: fetch from Firestore dynamically)
+    private double branchLat = 6.9271; // Colombo
+    private double branchLng = 79.8612;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,14 +59,13 @@ public class LocationSelectActivity extends FragmentActivity implements OnMapRea
         btnMyLocation = findViewById(R.id.btnMyLocation);
         dbHelper = new CartDatabaseHelper(this);
 
-        // Initialize Places SDK (make sure API key is set in Manifest)
+        // Initialize Places SDK
         if (!Places.isInitialized()) {
-            Places.initialize(getApplicationContext(), getString(R.string.google_maps_key)); // or use manifest meta-data already set
+            Places.initialize(getApplicationContext(), getString(R.string.google_maps_key));
         }
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
-        // Add SupportMapFragment into the container
         SupportMapFragment mapFragment = SupportMapFragment.newInstance();
         getSupportFragmentManager()
                 .beginTransaction()
@@ -77,38 +74,35 @@ public class LocationSelectActivity extends FragmentActivity implements OnMapRea
 
         mapFragment.getMapAsync(this);
 
-        // Setup Places Autocomplete fragment (search bar)
         setupPlacesAutocomplete();
 
-        // Confirm button action
+        // Confirm button → Start Delivery Flow
         btnConfirm.setOnClickListener(v -> {
             if (selectedLatLng == null) {
-                Toast.makeText(LocationSelectActivity.this, "Please choose a location!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Please choose a location!", Toast.LENGTH_SHORT).show();
                 return;
             }
 
-            // Clear cart now (you wanted cart cleared after payment)
             try {
-                dbHelper.clearCart();
+                dbHelper.clearCart(); // Clear cart after payment
             } catch (Exception e) {
                 e.printStackTrace();
             }
 
-            Toast.makeText(LocationSelectActivity.this,
-                    "Payment and location saved ✅\nLat: " + selectedLatLng.latitude +
-                            "\nLng: " + selectedLatLng.longitude,
+            Toast.makeText(this,
+                    "Payment successful ✅\nDelivery starting...",
                     Toast.LENGTH_LONG).show();
 
-            // Return to MainActivity (or you can start Delivery flow)
-            Intent i = new Intent(LocationSelectActivity.this, MainActivity.class);
-            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-            i.putExtra("delivery_lat", selectedLatLng.latitude);
-            i.putExtra("delivery_lng", selectedLatLng.longitude);
+            // Start Delivery Progress screen
+            Intent i = new Intent(LocationSelectActivity.this, DeliveryProgressActivity.class);
+            i.putExtra("customer_lat", selectedLatLng.latitude);
+            i.putExtra("customer_lng", selectedLatLng.longitude);
+            i.putExtra("branch_lat", branchLat);
+            i.putExtra("branch_lng", branchLng);
             startActivity(i);
             finish();
         });
 
-        // My location button
         btnMyLocation.setOnClickListener(v -> goToMyLocation());
     }
 
@@ -125,7 +119,6 @@ public class LocationSelectActivity extends FragmentActivity implements OnMapRea
             autocompleteFragment.setOnPlaceSelectedListener(new PlaceSelectionListener() {
                 @Override
                 public void onPlaceSelected(@NonNull Place place) {
-                    // Move camera to the selected place and set marker
                     LatLng latLng = place.getLatLng();
                     if (latLng != null && mMap != null) {
                         moveCameraAndPlaceMarker(latLng, place.getAddress() != null ? place.getAddress() : place.getName());
@@ -144,28 +137,21 @@ public class LocationSelectActivity extends FragmentActivity implements OnMapRea
     public void onMapReady(@NonNull GoogleMap googleMap) {
         mMap = googleMap;
 
-        // If permission granted, enable my-location and try to center map on user location
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             enableMyLocationAndCenter();
         } else {
-            // Request runtime permission
             ActivityCompat.requestPermissions(this,
                     new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQ_LOCATION_PERMISSION);
         }
 
-        // Map click: place marker
-        mMap.setOnMapClickListener(latLng -> {
-            moveCameraAndPlaceMarker(latLng, "Selected Location");
-        });
+        mMap.setOnMapClickListener(latLng -> moveCameraAndPlaceMarker(latLng, "Selected Location"));
 
-        // Marker drag listener (if user drags pin)
         mMap.setOnMarkerDragListener(new GoogleMap.OnMarkerDragListener() {
-            @Override public void onMarkerDragStart(Marker marker) { }
-            @Override public void onMarkerDrag(Marker marker) { }
+            @Override public void onMarkerDragStart(Marker marker) {}
+            @Override public void onMarkerDrag(Marker marker) {}
             @Override
             public void onMarkerDragEnd(Marker marker) {
                 selectedLatLng = marker.getPosition();
-                // Optionally reverse-geocode to show address (async)
                 String addr = getAddressFromLatLng(selectedLatLng);
                 if (addr != null && !addr.isEmpty()) {
                     marker.setTitle(addr);
@@ -185,7 +171,6 @@ public class LocationSelectActivity extends FragmentActivity implements OnMapRea
     }
 
     private void goToMyLocation() {
-        // Try to get last known location and animate camera to it
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this,
                     new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQ_LOCATION_PERMISSION);
@@ -197,14 +182,13 @@ public class LocationSelectActivity extends FragmentActivity implements OnMapRea
                 LatLng loc = new LatLng(location.getLatitude(), location.getLongitude());
                 moveCameraAndPlaceMarker(loc, "Your Location");
             } else {
-                Toast.makeText(LocationSelectActivity.this, "Unable to get current location", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Unable to get current location", Toast.LENGTH_SHORT).show();
             }
-        }).addOnFailureListener(e -> {
-            Toast.makeText(LocationSelectActivity.this, "Location error", Toast.LENGTH_SHORT).show();
-        });
+        }).addOnFailureListener(e ->
+                Toast.makeText(this, "Location error", Toast.LENGTH_SHORT).show()
+        );
     }
 
-    // Move camera smoothly and place a draggable marker
     private void moveCameraAndPlaceMarker(LatLng latLng, String title) {
         if (mMap == null || latLng == null) return;
 
@@ -222,7 +206,6 @@ public class LocationSelectActivity extends FragmentActivity implements OnMapRea
         if (currentMarker != null) currentMarker.showInfoWindow();
     }
 
-    // Reverse geocode to text (simple sync version, ok for short)
     private String getAddressFromLatLng(LatLng latLng) {
         try {
             Geocoder geocoder = new Geocoder(this, Locale.getDefault());
@@ -239,7 +222,6 @@ public class LocationSelectActivity extends FragmentActivity implements OnMapRea
         return null;
     }
 
-    // Permission result
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
                                            @NonNull int[] grantResults) {

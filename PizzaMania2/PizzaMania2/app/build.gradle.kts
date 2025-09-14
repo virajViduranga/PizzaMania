@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.kosala.pizza_mania"
-    compileSdk = 36   // ✅ Updated (must be 35+ for androidx.activity:1.10.1)
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.kosala.pizza_mania"
         minSdk = 24
-        targetSdk = 36   // ✅ Updated to match compileSdk
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -35,15 +35,15 @@ android {
 
 dependencies {
     // Core Android dependencies
-    implementation(libs.appcompat)
-    implementation(libs.material)
-    implementation(libs.activity)
-    implementation(libs.constraintlayout)
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.9.0")
+    implementation("androidx.activity:activity-ktx:1.10.1")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
     // Test dependencies
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.ext.junit)
-    androidTestImplementation(libs.espresso.core)
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     // Google Maps + Location
     implementation("com.google.android.gms:play-services-maps:18.2.0")
@@ -52,15 +52,21 @@ dependencies {
     // Firebase BOM (manages versions)
     implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
     implementation("com.google.firebase:firebase-auth")
-    implementation("com.google.firebase:firebase-firestore") // ✅ Firestore for branches/menu
+    implementation("com.google.firebase:firebase-firestore")
+    implementation("com.google.firebase:firebase-storage") // ✅ Firebase Storage
 
     // Extra UI components
     implementation("androidx.cardview:cardview:1.0.0")
 
-    // ✅ Glide (for pizza images)
+    // Glide (for pizza images)
     implementation("com.github.bumptech.glide:glide:4.16.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
 
     // Google Places SDK (Autocomplete)
     implementation("com.google.android.libraries.places:places:3.4.0")
+
+    // OkHttp for HTTP requests
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+// Gson (for JSON parsing if needed)
+    implementation("com.google.code.gson:gson:2.10.1")
 }

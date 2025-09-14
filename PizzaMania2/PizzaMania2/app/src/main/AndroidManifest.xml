@@ -49,6 +49,15 @@
             android:name=".AdminDashboardActivity"
             android:exported="true" />
 
+        <activity android:name=".ManageUsersActivity" />
+
+        <activity android:name=".ManageMenuActivity" />
+
+        <activity android:name=".AddPizzaActivity" />
+
+        <activity android:name=".UpdatePizzaActivity" />
+
+
 
         <!-- 🔹 Customer Dashboard -->
         <activity
@@ -64,6 +73,13 @@
 
         <!-- 🔹 Location Select Activity -->
         <activity android:name=".LocationSelectActivity" />
+
+        <!-- Delivery Progress (GIF animations) -->
+        <activity android:name=".DeliveryProgressActivity" />
+
+        <!-- Delivery Map (route tracking) -->
+        <activity android:name=".DeliveryMapActivity" />
+
 
     </application>
 
